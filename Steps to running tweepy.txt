@@ -1,0 +1,10 @@
+Approval is first needed by Twitter to pull API from site
+Apply for application at https: // developer.twitter.com/en/apply-for-access
+Once application is approved username associated with account can start pulling Twitter application
+Tweepy module will need to be installed to begin on user's python intepreter
+Go to terminal
+pip install tweepy - -python
+pip install jupyter
+pip install jupyter notebook
+Jupyter Notebook is then used to work on code
+Then download code from jupyter notebook and upload to github repository https: // github.com/isaacm13/Twitter-Project
