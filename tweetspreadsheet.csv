@@ -1,48 +1,43 @@
-favorite_count,retweet_count,quoted_status_id,source,in_reply_to_status_id_str,lang,text,id_str,quoted_status_id_str,in_reply_to_user_id_str,source_url,in_reply_to_user_id,in_reply_to_screen_name,id,in_reply_to_status_id,user,author
-0,16,,Buffer,,en,"RT @GarvNanwani: @code tip -
+in_reply_to_user_id,in_reply_to_screen_name,source,text,id_str,favorite_count,in_reply_to_status_id_str,quoted_status_id,lang,quoted_status_id_str,source_url,retweet_count,in_reply_to_user_id_str,in_reply_to_status_id,id,user,author
+,,Buffer,"RT @mattbierner: Today's @code setting: suggest preview
+
+When enabled, suggest preview shows an inline preview of what the current suggesti…",1405284556693856256,0,,,en,,https://buffer.com,12,,,1405284556693856256,code,code
+,,TweetDeck,"RT @yaojinyang: Welcome to May’s updates on VS @Code for #Java. In this edition, we will introduce Java Formatter Settings editor and other…",1405256932726697991,0,,,en,,https://about.twitter.com/products/tweetdeck,27,,,1405256932726697991,code,code
+,,Buffer,"RT @freeCodeCamp: Have you heard? You can now open anything you have access to on GitHub directly from VS Code.
+
+That means no clone. No do…",1405210223627935750,0,,,en,,https://buffer.com,83,,,1405210223627935750,code,code
+,,Buffer,"RT @mattbierner: Today's @code tip: terminal tabs
+
+View and manage all of your integrated terminals.
+
+You can even drag and drop tabs to mo…",1405190182966640641,0,,,en,,https://buffer.com,19,,,1405190182966640641,code,code
+,,Buffer,"RT @DynamicWebPaige: Have you ever tried @code's Markdown Table extension?
+
+https://t.co/9nareWFxcc
+
+It formats tables; supports nicer navi…",1404923676605157376,0,,1.404796393181614e+18,en,1404796393181614086,https://buffer.com,86,,,1404923676605157376,code,code
+28189006.0,marcduiker,TweetDeck,@marcduiker @suzmue CC: @anthonypjshaw Gopher pet? ☺️,1404884676305588225,2,1404828465711419392,,cy,,https://about.twitter.com/products/tweetdeck,0,28189006,1.4048284657114194e+18,1404884676305588225,code,code
+,,Buffer,RT @pythonvscode: The June release for the #jupyter extension in @code is here! See what long-awaited changes for the Data Viewer and Varia…,1404865795268780038,0,,,en,,https://buffer.com,26,,,1404865795268780038,code,code
+,,Buffer,💬 What's so special about #Golang? And how can VS Code help Go developers? Join us this Thursday for a live session… https://t.co/OtuCwsMZH8,1404827556411588615,63,,,en,,https://buffer.com,12,,,1404827556411588615,code,code
+,,Buffer,"RT @GarvNanwani: @code tip -
 
 Normally when you do ' code . '  in terminal, it opens the folder in a new vs code window.
  
-If you want to o…",1404559526431543301,,,https://buffer.com,,,1404559526431543301,,code,code
-7,1,,TweetDeck,1404521280863416322,und,@n1k0 👀 https://t.co/PJyj1WayGk,1404523914470957061,,6619162,https://about.twitter.com/products/tweetdeck,6619162.0,n1k0,1404523914470957061,1.4045212808634163e+18,code,code
-173,38,,TweetDeck,,en,"Use Remote Repositories in VS Code to browse and edit repos without cloning 🤯🪄
-https://t.co/dF2K4wKMzi",1404514979194228747,,,https://about.twitter.com/products/tweetdeck,,,1404514979194228747,,code,code
-0,13,,Buffer,,en,"RT @K8sArchitect: Learn to debug Go microservices locally while testing against dependencies in a remote Kubernetes cluster using VSCode
+If you want to o…",1404559526431543301,0,,,en,,https://buffer.com,44,,,1404559526431543301,code,code
+6619162.0,n1k0,TweetDeck,@n1k0 👀 https://t.co/PJyj1WayGk,1404523914470957061,9,1404521280863416322,,und,,https://about.twitter.com/products/tweetdeck,1,6619162,1.4045212808634163e+18,1404523914470957061,code,code
+,,TweetDeck,"Use Remote Repositories in VS Code to browse and edit repos without cloning 🤯🪄
+https://t.co/dF2K4wKMzi",1404514979194228747,369,,,en,,https://about.twitter.com/products/tweetdeck,89,,,1404514979194228747,code,code
+,,Buffer,"RT @K8sArchitect: Learn to debug Go microservices locally while testing against dependencies in a remote Kubernetes cluster using VSCode
 
-👉…",1404503914305802243,,,https://buffer.com,,,1404503914305802243,,code,code
-0,27,,Buffer,,en,"RT @Tyriar: .@MeganRogge_ and myself are about to start working on bringing terminals to the editor area in @code.
+👉…",1404503914305802243,0,,,en,,https://buffer.com,18,,,1404503914305802243,code,code
+,,Buffer,"RT @Tyriar: .@MeganRogge_ and myself are about to start working on bringing terminals to the editor area in @code.
 
-Plan details: https://t…",1404455568245469185,,,https://buffer.com,,,1404455568245469185,,code,code
-0,853,,TweetDeck,,en,"RT @github: You can now browse or even make edits to any GitHub repo straight from @code, instantly - WITHOUT having to pull the source dow…",1403743811453390848,,,https://about.twitter.com/products/tweetdeck,,,1403743811453390848,,code,code
-0,6,,Buffer,,en,"RT @davidpine7: 💯 The @code extension API was built so nicely, extending their functionality is a thing of beauty. With @typescript I'm rig…",1403463051198803979,,,https://buffer.com,,,1403463051198803979,,code,code
-1,0,,TweetDeck,1403457952334368768,en,"@olafurw Is your code in C:\FOO ? If so, pressing the blue button trusts that folder only. The checkbox trusts the… https://t.co/GMQ21buqKW",1403458434335350785,,12514012,https://about.twitter.com/products/tweetdeck,12514012.0,olafurw,1403458434335350785,1.4034579523343688e+18,code,code
-28,2,,TweetDeck,1403449957504499717,en,"@olafurw We are working to make development environments safer and reduce the possibility of supply-chain attacks,… https://t.co/tCDqClnsvA",1403457108910116867,,12514012,https://about.twitter.com/products/tweetdeck,12514012.0,olafurw,1403457108910116867,1.4034499575044997e+18,code,code
-0,11,,TweetDeck,,en,"RT @miguelsolorio_: 🚀 Now that we shipped terminal tabs in @code, I wanted to share a little bit of the backstory of how it all came about.…",1403456179527831556,,,https://about.twitter.com/products/tweetdeck,,,1403456179527831556,,code,code
-58,11,1.4023501470407926e+18,Sprinklr Publishing,,en,"Missed the live event? 🎉 You can now watch the recording on our YouTube channel.
-Link 👉 https://t.co/cDBBuSuuh9 https://t.co/sJjzNWkikA",1403402063170637825,1402350147040792579,,https://prod1.sprinklr.com,,,1403402063170637825,,code,code
-0,0,,TweetDeck,1402883101605384193,en,@theGoldyMan @mattbierner We are on Electron 12 currently in the Stable branch,1403057090214522883,,17621534,https://about.twitter.com/products/tweetdeck,17621534.0,theGoldyMan,1403057090214522883,1.4028831016053842e+18,code,code
-450,110,,Twitter Web App,,en,"🎉 The May @code release is here! Check out what's new:
-
-📖 Remote Repositories to read code w/o cloning 
-🚶🏽‍♀️""Getti… https://t.co/r9Wf76nOOK",1403049441381302277,,,https://mobile.twitter.com,,,1403049441381302277,,code,code
-158,25,,TweetDeck,,en,"📣 We're going live shortly with the latest release party! 🎉 Join us to see what's in v1.57 and ask us questions 💬
-J… https://t.co/9UYuYdkl3D",1403001506329022479,,,https://about.twitter.com/products/tweetdeck,,,1403001506329022479,,code,code
-0,25,,TweetDeck,,en,"RT @mattbierner: Today's @code setting: Menu bar visibility 
-
-Configure how the menu bar is displayed on Windows and Linux
-
-• classic — Def…",1402742275554254848,,,https://about.twitter.com/products/tweetdeck,,,1402742275554254848,,code,code
-0,16,,Twitter Web App,,en,"RT @chrisraygill: Hi friends! 👋
-
-I'm working on some ideas for verifying @code extension publishers.
-
-I'd love to hear which of these optio…",1402372297944616965,,,https://mobile.twitter.com,,,1402372297944616965,,code,code
-211,49,,TweetDeck,,en,"We're getting ready for a new VS Code release this week… And a new release party!🥳
-Hope you'll join us on Thursday… https://t.co/r1K2dmlDcl",1402350147040792579,,,https://about.twitter.com/products/tweetdeck,,,1402350147040792579,,code,code
-67,13,1.401946664290558e+18,Buffer,,en,"If you use C/C++ in VS Code, our team wants to hear from you to improve CMakePresets.json ⬇️ https://t.co/b1gXDrm3fr",1401967203566690307,1401946664290557964,,https://buffer.com,,,1401967203566690307,,code,code
-15,0,,TweetDeck,1401936342326579206,en,@patrickdebois The idea is that git will smartly detect most moved files automatically. git mv would automatically… https://t.co/n66eofmoea,1401956971306131456,,15649735,https://about.twitter.com/products/tweetdeck,15649735.0,patrickdebois,1401956971306131456,1.4019363423265792e+18,code,code
-0,80,,Buffer,,en,"RT @Tyriar: Luna Paint v0.6 for @code is out! Highlights:
-
-- Webp &amp; encoding quality
-- Flexible window layout
-- Duplicate/drag and drop lay…",1401934034557497347,,,https://buffer.com,,,1401934034557497347,,code,code
+Plan details: https://t…",1404455568245469185,0,,,en,,https://buffer.com,37,,,1404455568245469185,code,code
+,,TweetDeck,"RT @github: You can now browse or even make edits to any GitHub repo straight from @code, instantly - WITHOUT having to pull the source dow…",1403743811453390848,0,,,en,,https://about.twitter.com/products/tweetdeck,886,,,1403743811453390848,code,code
+,,Buffer,"RT @davidpine7: 💯 The @code extension API was built so nicely, extending their functionality is a thing of beauty. With @typescript I'm rig…",1403463051198803979,0,,,en,,https://buffer.com,6,,,1403463051198803979,code,code
+12514012.0,olafurw,TweetDeck,"@olafurw Is your code in C:\FOO ? If so, pressing the blue button trusts that folder only. The checkbox trusts the… https://t.co/GMQ21buqKW",1403458434335350785,1,1403457952334368768,,en,,https://about.twitter.com/products/tweetdeck,0,12514012,1.4034579523343688e+18,1403458434335350785,code,code
+12514012.0,olafurw,TweetDeck,"@olafurw We are working to make development environments safer and reduce the possibility of supply-chain attacks,… https://t.co/tCDqClnsvA",1403457108910116867,28,1403449957504499717,,en,,https://about.twitter.com/products/tweetdeck,2,12514012,1.4034499575044997e+18,1403457108910116867,code,code
+,,TweetDeck,"RT @miguelsolorio_: 🚀 Now that we shipped terminal tabs in @code, I wanted to share a little bit of the backstory of how it all came about.…",1403456179527831556,0,,,en,,https://about.twitter.com/products/tweetdeck,13,,,1403456179527831556,code,code
+,,Sprinklr Publishing,"Missed the live event? 🎉 You can now watch the recording on our YouTube channel.
+Link 👉 https://t.co/cDBBuSuuh9 https://t.co/sJjzNWkikA",1403402063170637825,58,,1.4023501470407926e+18,en,1402350147040792579,https://prod1.sprinklr.com,11,,,1403402063170637825,code,code
+17621534.0,theGoldyMan,TweetDeck,@theGoldyMan @mattbierner We are on Electron 12 currently in the Stable branch,1403057090214522883,0,1402883101605384193,,en,,https://about.twitter.com/products/tweetdeck,0,17621534,1.4028831016053842e+18,1403057090214522883,code,code
