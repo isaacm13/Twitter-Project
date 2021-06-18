@@ -1,0 +1,45 @@
+source_url,id_str,source,text,favorite_count,lang,in_reply_to_status_id_str,in_reply_to_user_id_str,in_reply_to_status_id,quoted_status_id,retweet_count,quoted_status_id_str,id,in_reply_to_screen_name,in_reply_to_user_id,user,author
+https://prod1.sprinklr.com,1405918729045692419,Sprinklr Publishing,"Missed the livestream? You can now catch it on-demand on our YouTube channel📺
+Watch 👉 https://t.co/Kr15EV5SoW https://t.co/25OfnwmRIG",35,en,,,,1.405552832208683e+18,4,1405552832208683011,1405918729045692419,,,code,code
+https://buffer.com,1405647699483967493,Buffer,"RT @LeoKac333: Check out my VSCode extension - Blockman, took me 6 months to build. Supports Python and many other languages. Please help m…",0,en,,,,,210,,1405647699483967493,,,code,code
+https://about.twitter.com/products/tweetdeck,1405586524066881541,TweetDeck,"RT @pythonvscode: And the June release of the #Python extension for VS @code is here! 🥳
+We now have support for workspace trust, jump-to-so…",0,en,,,,,70,,1405586524066881541,,,code,code
+https://about.twitter.com/products/tweetdeck,1405564371913392133,TweetDeck,"@TpoM6oH Yup, it's a new feature! Read more in the release notes: https://t.co/LxikYTSEyB",25,en,1405562974148861952,243794902,1.405562974148862e+18,,2,,1405564371913392133,TpoM6oH,243794902.0,code,code
+https://buffer.com,1405552832208683011,Buffer,"🍿 We're going live in just a few mins with @suzmue for a demo and Q&amp;A about coding in Go with VS Code 💬
+Join live… https://t.co/Vk8UYcoDyt",36,en,,,,,8,,1405552832208683011,,,code,code
+https://buffer.com,1405284556693856256,Buffer,"RT @mattbierner: Today's @code setting: suggest preview
+
+When enabled, suggest preview shows an inline preview of what the current suggesti…",0,en,,,,,24,,1405284556693856256,,,code,code
+https://about.twitter.com/products/tweetdeck,1405256932726697991,TweetDeck,"RT @yaojinyang: Welcome to May’s updates on VS @Code for #Java. In this edition, we will introduce Java Formatter Settings editor and other…",0,en,,,,,35,,1405256932726697991,,,code,code
+https://buffer.com,1405210223627935750,Buffer,"RT @freeCodeCamp: Have you heard? You can now open anything you have access to on GitHub directly from VS Code.
+
+That means no clone. No do…",0,en,,,,,95,,1405210223627935750,,,code,code
+https://buffer.com,1405190182966640641,Buffer,"RT @mattbierner: Today's @code tip: terminal tabs
+
+View and manage all of your integrated terminals.
+
+You can even drag and drop tabs to mo…",0,en,,,,,21,,1405190182966640641,,,code,code
+https://buffer.com,1404923676605157376,Buffer,"RT @DynamicWebPaige: Have you ever tried @code's Markdown Table extension?
+
+https://t.co/9nareWFxcc
+
+It formats tables; supports nicer navi…",0,en,,,,1.404796393181614e+18,94,1404796393181614086,1404923676605157376,,,code,code
+https://about.twitter.com/products/tweetdeck,1404884676305588225,TweetDeck,@marcduiker @suzmue CC: @anthonypjshaw Gopher pet? ☺️,2,cy,1404828465711419392,28189006,1.4048284657114194e+18,,0,,1404884676305588225,marcduiker,28189006.0,code,code
+https://buffer.com,1404865795268780038,Buffer,RT @pythonvscode: The June release for the #jupyter extension in @code is here! See what long-awaited changes for the Data Viewer and Varia…,0,en,,,,,26,,1404865795268780038,,,code,code
+https://buffer.com,1404827556411588615,Buffer,💬 What's so special about #Golang? And how can VS Code help Go developers? Join us this Thursday for a live session… https://t.co/OtuCwsMZH8,63,en,,,,,13,,1404827556411588615,,,code,code
+https://buffer.com,1404559526431543301,Buffer,"RT @GarvNanwani: @code tip -
+
+Normally when you do ' code . '  in terminal, it opens the folder in a new vs code window.
+ 
+If you want to o…",0,en,,,,,46,,1404559526431543301,,,code,code
+https://about.twitter.com/products/tweetdeck,1404523914470957061,TweetDeck,@n1k0 👀 https://t.co/PJyj1WayGk,11,und,1404521280863416322,6619162,1.4045212808634163e+18,,1,,1404523914470957061,n1k0,6619162.0,code,code
+https://about.twitter.com/products/tweetdeck,1404514979194228747,TweetDeck,"Use Remote Repositories in VS Code to browse and edit repos without cloning 🤯🪄
+https://t.co/dF2K4wKMzi",372,en,,,,,94,,1404514979194228747,,,code,code
+https://buffer.com,1404503914305802243,Buffer,"RT @K8sArchitect: Learn to debug Go microservices locally while testing against dependencies in a remote Kubernetes cluster using VSCode
+
+👉…",0,en,,,,,19,,1404503914305802243,,,code,code
+https://buffer.com,1404455568245469185,Buffer,"RT @Tyriar: .@MeganRogge_ and myself are about to start working on bringing terminals to the editor area in @code.
+
+Plan details: https://t…",0,en,,,,,38,,1404455568245469185,,,code,code
+https://about.twitter.com/products/tweetdeck,1403743811453390848,TweetDeck,"RT @github: You can now browse or even make edits to any GitHub repo straight from @code, instantly - WITHOUT having to pull the source dow…",0,en,,,,,933,,1403743811453390848,,,code,code
+https://buffer.com,1403463051198803979,Buffer,"RT @davidpine7: 💯 The @code extension API was built so nicely, extending their functionality is a thing of beauty. With @typescript I'm rig…",0,en,,,,,6,,1403463051198803979,,,code,code
