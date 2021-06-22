@@ -20,6 +20,7 @@ import tweepy #used to work with Twitter's API
 import webbrowser
 import time
 import pandas as pd
+import datetime 
 
 
 # In[4]:
@@ -140,6 +141,52 @@ df1.to_csv('tweetspreadsheet.csv', index=False)
 
 df1_saved_file = pd.read_csv('tweetspreadsheet.csv')
 df1_saved_file
+
+
+# In[17]:
+
+
+# screen name of the account to be fetched
+screen_name = "code"
+  
+# number of statuses to be fetched
+count = 3
+  
+# fetching the statuses
+statuses = api.user_timeline(screen_name, count = count)
+  
+# printing the statuses
+for status in statuses:
+    print(status.text, end = "\n\n")
+
+
+# In[19]:
+
+
+search_words = ["#covid19", "2020", "lockdown"]
+
+date_since = "2021-06-21"
+
+tweets = tweepy.Cursor(api.search, search_words, geocode="20.5937,78.9629,3000km", lang="en", since=date_since).items(10)
+## the geocode is for India; format for geocode="lattitude,longitude,radius"
+## radius should be in miles or km
+
+
+for tweet in tweets:
+    print("created_at: {}\nuser: {}\ntweet text: {}\ngeo_location: {}".
+            format(tweet.created_at, tweet.user.screen_name, tweet.text, tweet.user.location))
+    print("\n")
+## tweet.user.location will give you the general location of the user and not the particular location for the tweet itself, as it turns out, most of the users do not share the exact location of the tweet
+
+
+# In[21]:
+
+
+date_since = '2021-06-14'
+date_until = '2021-06-21'
+tweets = tweepy.Cursor(api.search,q='test', since=date_since,until=date_until).items(10)
+for tweet in tweets:         
+    print (tweet.text)  
 
 
 # In[ ]:
