@@ -106,7 +106,7 @@ def extract_timeline_as_df(timeline_list):
     return df
 
 
-# In[13]:
+# In[36]:
 
 
 # pulls data from Visual Studio Code's twitter page https://twitter.com/code
@@ -117,7 +117,7 @@ screen_name = "code"
 # fetching the statuses
 user_timeline = api.user_timeline(screen_name, count=200)
 df1 = extract_timeline_as_df(user_timeline)
-list(df1) 
+len(df1) 
 
 
 # In[14]:
@@ -160,16 +160,18 @@ for status in statuses:
     print(status.text, end = "\n\n")
 
 
-# In[19]:
+# In[42]:
 
 
-search_words = ["#covid19", "2020", "lockdown"]
-
+#search_words = ["#covid19", "2020", "lockdown"]
+key_word = '@code'
+#searches all tweets that reference the key_word specified 
 date_since = "2021-06-21"
 
-tweets = tweepy.Cursor(api.search, search_words, geocode="20.5937,78.9629,3000km", lang="en", since=date_since).items(10)
-## the geocode is for India; format for geocode="lattitude,longitude,radius"
+tweets = tweepy.Cursor(api.search, key_word, geocode="38.892062,-77.019912,3000km", lang="en", since=date_since).items(10)
+## the geocode is for Washington, DC; format for geocode="lattitude,longitude,radius"
 ## radius should be in miles or km
+#items references the number of tweets to pull 
 
 
 for tweet in tweets:
@@ -179,7 +181,7 @@ for tweet in tweets:
 ## tweet.user.location will give you the general location of the user and not the particular location for the tweet itself, as it turns out, most of the users do not share the exact location of the tweet
 
 
-# In[21]:
+# In[32]:
 
 
 date_since = '2021-06-14'
