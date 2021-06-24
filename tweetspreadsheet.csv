@@ -1,44 +1,46 @@
-in_reply_to_status_id,in_reply_to_status_id_str,lang,quoted_status_id,quoted_status_id_str,id,id_str,source,text,favorite_count,in_reply_to_screen_name,in_reply_to_user_id_str,retweet_count,in_reply_to_user_id,source_url,user,author
-1.407059306294481e+18,1407059306294480896,en,,,1407059443171401730,1407059443171401730,TweetDeck,@eamodio PS: here's the GitLens extension: https://t.co/04Jt5qc145,22,code,3167734591,3,3167734591.0,https://about.twitter.com/products/tweetdeck,code,code
-,,en,,,1407059306294480896,1407059306294480896,TweetDeck,"🔎 GitLens is a must-have extensions for VS Code, adding many features for working with Git
-📺 This Wednesday join Gi… https://t.co/GyAaI1hoGw",89,,,21,,https://about.twitter.com/products/tweetdeck,code,code
-,,en,1.4055385030483272e+18,1405538503048327169,1405999767604416512,1405999767604416512,Buffer,RT @ClaudiaRegio: Want to learn about #jupyter notebooks in @code and how it can improve your #Python #DataScience workflow?? Come sign up…,0,,,7,,https://buffer.com,code,code
-,,en,1.405552832208683e+18,1405552832208683011,1405918729045692419,1405918729045692419,Sprinklr Publishing,"Missed the livestream? You can now catch it on-demand on our YouTube channel📺
-Watch 👉 https://t.co/Kr15EV5SoW https://t.co/25OfnwmRIG",48,,,8,,https://prod1.sprinklr.com,code,code
-,,en,,,1405647699483967493,1405647699483967493,Buffer,"RT @LeoKac333: Check out my VSCode extension - Blockman, took me 6 months to build. Supports Python and many other languages. Please help m…",0,,,238,,https://buffer.com,code,code
-,,en,,,1405586524066881541,1405586524066881541,TweetDeck,"RT @pythonvscode: And the June release of the #Python extension for VS @code is here! 🥳
-We now have support for workspace trust, jump-to-so…",0,,,79,,https://about.twitter.com/products/tweetdeck,code,code
-1.405562974148862e+18,1405562974148861952,en,,,1405564371913392133,1405564371913392133,TweetDeck,"@TpoM6oH Yup, it's a new feature! Read more in the release notes: https://t.co/LxikYTSEyB",27,TpoM6oH,243794902,2,243794902.0,https://about.twitter.com/products/tweetdeck,code,code
-,,en,,,1405552832208683011,1405552832208683011,Buffer,"🍿 We're going live in just a few mins with @suzmue for a demo and Q&amp;A about coding in Go with VS Code 💬
-Join live… https://t.co/Vk8UYcoDyt",37,,,9,,https://buffer.com,code,code
-,,en,,,1405284556693856256,1405284556693856256,Buffer,"RT @mattbierner: Today's @code setting: suggest preview
+id_str,retweet_count,in_reply_to_screen_name,favorite_count,quoted_status_id_str,lang,in_reply_to_status_id,in_reply_to_user_id_str,text,id,in_reply_to_status_id_str,source_url,source,quoted_status_id,in_reply_to_user_id,user,author
+1407794874515030017,1,timschaeps,2,,en,1.4077918838966395e+18,17904163,@timschaeps cool - also check out the remote extensions to see if those help you work on remote environments (https://t.co/QY8bgWyYQ1),1407794874515030017,1407791883896639495,https://about.twitter.com/products/tweetdeck,TweetDeck,,17904163.0,code,code
+1407783006379466754,4,,0,,en,,,"RT @eamodio: 👀 Come and join my GitLens livestream today at 3:30pm ET/ 12:30pm PT.
+https://t.co/mJpQkPQMLz
 
-When enabled, suggest preview shows an inline preview of what the current suggesti…",0,,,25,,https://buffer.com,code,code
-,,en,,,1405256932726697991,1405256932726697991,TweetDeck,"RT @yaojinyang: Welcome to May’s updates on VS @Code for #Java. In this edition, we will introduce Java Formatter Settings editor and other…",0,,,37,,https://about.twitter.com/products/tweetdeck,code,code
-,,en,,,1405210223627935750,1405210223627935750,Buffer,"RT @freeCodeCamp: Have you heard? You can now open anything you have access to on GitHub directly from VS Code.
+I will be going over many power…",1407783006379466754,,https://mobile.twitter.com,Twitter Web App,,,code,code
+1407780512144429056,4,,28,,en,,,📣 We're going live in 10 minutes with @eamodio to learn about his super-popular GitLens 🔎 extension for superchargi… https://t.co/1e0SZdF1jj,1407780512144429056,,https://sproutsocial.com,Sprout Social,,,code,code
+1407445890927935489,61,,0,,en,,,"RT @vasanthdevelop: VSCode Tip 💡
 
-That means no clone. No do…",0,,,97,,https://buffer.com,code,code
-,,en,,,1405190182966640641,1405190182966640641,Buffer,"RT @mattbierner: Today's @code tip: terminal tabs
+You can use F2 keyboard shortcut to rename HTML tags in @code just like you can do in other apps.
+
+#100Da…",1407445890927935489,,https://sproutsocial.com,Sprout Social,,,code,code
+1407196434756030472,0,ChristosMatskas,2,,en,1.4070359778481357e+18,37740370,@ChristosMatskas @jamesdrandall @github yes we would love feedback on how to make it better!,1407196434756030472,1407035977848135685,https://about.twitter.com/products/tweetdeck,TweetDeck,,37740370.0,code,code
+1407195881686769671,32,,0,,en,,,"RT @nabiilk2: Coding on a larger monitor and want the code to be on the center of your screen ?  
+
+On #VSCode (@code) you can change the ap…",1407195881686769671,,https://about.twitter.com/products/tweetdeck,TweetDeck,,,code,code
+1407059443171401730,5,code,37,,en,1.407059306294481e+18,3167734591,@eamodio PS: here's the GitLens extension: https://t.co/04Jt5qc145,1407059443171401730,1407059306294480896,https://about.twitter.com/products/tweetdeck,TweetDeck,,3167734591.0,code,code
+1407059306294480896,40,,130,,en,,,"🔎 GitLens is a must-have extensions for VS Code, adding many features for working with Git
+📺 This Wednesday join Gi… https://t.co/GyAaI1hoGw",1407059306294480896,,https://about.twitter.com/products/tweetdeck,TweetDeck,,,code,code
+1405999767604416512,7,,0,1405538503048327169,en,,,RT @ClaudiaRegio: Want to learn about #jupyter notebooks in @code and how it can improve your #Python #DataScience workflow?? Come sign up…,1405999767604416512,,https://buffer.com,Buffer,1.4055385030483272e+18,,code,code
+1405918729045692419,8,,48,1405552832208683011,en,,,"Missed the livestream? You can now catch it on-demand on our YouTube channel📺
+Watch 👉 https://t.co/Kr15EV5SoW https://t.co/25OfnwmRIG",1405918729045692419,,https://prod1.sprinklr.com,Sprinklr Publishing,1.405552832208683e+18,,code,code
+1405647699483967493,239,,0,,en,,,"RT @LeoKac333: Check out my VSCode extension - Blockman, took me 6 months to build. Supports Python and many other languages. Please help m…",1405647699483967493,,https://buffer.com,Buffer,,,code,code
+1405586524066881541,79,,0,,en,,,"RT @pythonvscode: And the June release of the #Python extension for VS @code is here! 🥳
+We now have support for workspace trust, jump-to-so…",1405586524066881541,,https://about.twitter.com/products/tweetdeck,TweetDeck,,,code,code
+1405564371913392133,2,TpoM6oH,27,,en,1.405562974148862e+18,243794902,"@TpoM6oH Yup, it's a new feature! Read more in the release notes: https://t.co/LxikYTSEyB",1405564371913392133,1405562974148861952,https://about.twitter.com/products/tweetdeck,TweetDeck,,243794902.0,code,code
+1405552832208683011,9,,37,,en,,,"🍿 We're going live in just a few mins with @suzmue for a demo and Q&amp;A about coding in Go with VS Code 💬
+Join live… https://t.co/Vk8UYcoDyt",1405552832208683011,,https://buffer.com,Buffer,,,code,code
+1405284556693856256,26,,0,,en,,,"RT @mattbierner: Today's @code setting: suggest preview
+
+When enabled, suggest preview shows an inline preview of what the current suggesti…",1405284556693856256,,https://buffer.com,Buffer,,,code,code
+1405256932726697991,37,,0,,en,,,"RT @yaojinyang: Welcome to May’s updates on VS @Code for #Java. In this edition, we will introduce Java Formatter Settings editor and other…",1405256932726697991,,https://about.twitter.com/products/tweetdeck,TweetDeck,,,code,code
+1405210223627935750,97,,0,,en,,,"RT @freeCodeCamp: Have you heard? You can now open anything you have access to on GitHub directly from VS Code.
+
+That means no clone. No do…",1405210223627935750,,https://buffer.com,Buffer,,,code,code
+1405190182966640641,23,,0,,en,,,"RT @mattbierner: Today's @code tip: terminal tabs
 
 View and manage all of your integrated terminals.
 
-You can even drag and drop tabs to mo…",0,,,22,,https://buffer.com,code,code
-,,en,1.404796393181614e+18,1404796393181614086,1404923676605157376,1404923676605157376,Buffer,"RT @DynamicWebPaige: Have you ever tried @code's Markdown Table extension?
+You can even drag and drop tabs to mo…",1405190182966640641,,https://buffer.com,Buffer,,,code,code
+1404923676605157376,97,,0,1404796393181614086,en,,,"RT @DynamicWebPaige: Have you ever tried @code's Markdown Table extension?
 
 https://t.co/9nareWFxcc
 
-It formats tables; supports nicer navi…",0,,,95,,https://buffer.com,code,code
-1.4048284657114194e+18,1404828465711419392,cy,,,1404884676305588225,1404884676305588225,TweetDeck,@marcduiker @suzmue CC: @anthonypjshaw Gopher pet? ☺️,2,marcduiker,28189006,0,28189006.0,https://about.twitter.com/products/tweetdeck,code,code
-,,en,,,1404865795268780038,1404865795268780038,Buffer,RT @pythonvscode: The June release for the #jupyter extension in @code is here! See what long-awaited changes for the Data Viewer and Varia…,0,,,26,,https://buffer.com,code,code
-,,en,,,1404827556411588615,1404827556411588615,Buffer,💬 What's so special about #Golang? And how can VS Code help Go developers? Join us this Thursday for a live session… https://t.co/OtuCwsMZH8,63,,,12,,https://buffer.com,code,code
-,,en,,,1404559526431543301,1404559526431543301,Buffer,"RT @GarvNanwani: @code tip -
-
-Normally when you do ' code . '  in terminal, it opens the folder in a new vs code window.
- 
-If you want to o…",0,,,49,,https://buffer.com,code,code
-1.4045212808634163e+18,1404521280863416322,und,,,1404523914470957061,1404523914470957061,TweetDeck,@n1k0 👀 https://t.co/PJyj1WayGk,11,n1k0,6619162,1,6619162.0,https://about.twitter.com/products/tweetdeck,code,code
-,,en,,,1404514979194228747,1404514979194228747,TweetDeck,"Use Remote Repositories in VS Code to browse and edit repos without cloning 🤯🪄
-https://t.co/dF2K4wKMzi",374,,,94,,https://about.twitter.com/products/tweetdeck,code,code
-,,en,,,1404503914305802243,1404503914305802243,Buffer,"RT @K8sArchitect: Learn to debug Go microservices locally while testing against dependencies in a remote Kubernetes cluster using VSCode
-
-👉…",0,,,19,,https://buffer.com,code,code
+It formats tables; supports nicer navi…",1404923676605157376,,https://buffer.com,Buffer,1.404796393181614e+18,,code,code
+1404884676305588225,0,marcduiker,2,,cy,1.4048284657114194e+18,28189006,@marcduiker @suzmue CC: @anthonypjshaw Gopher pet? ☺️,1404884676305588225,1404828465711419392,https://about.twitter.com/products/tweetdeck,TweetDeck,,28189006.0,code,code
