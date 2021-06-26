@@ -283,43 +283,11 @@ df_saved_file
 
 
 #to see tweets for specific User name 
-df_tesla = df[ df['User'] == '@Twitter']
+df_tesla = df[ df['User'] == input("Enter Twitter username from list only:")] #@socialmedia2day", "@GoogleAds", "@Instagram", "@Facebook", "@Twitter"
 df_tesla.head()
 
 
 # In[29]:
-
-
-#cleaning the tweets
-def remove_pattern(input_txt, pattern):
-    r = re.findall(pattern, input_txt)
-    for i in r:
-        input_txt = re.sub(i, '', input_txt)        
-    return input_txt
-def clean_tweets(tweets):
-    #remove twitter Return handles (RT @xxx:)
-    tweets = np.vectorize(remove_pattern)(tweets, "RT @[\w]*:") 
-    
-    #remove twitter handles (@xxx)
-    tweets = np.vectorize(remove_pattern)(tweets, "@[\w]*")
-    
-    #remove URL links (httpxxx)
-    tweets = np.vectorize(remove_pattern)(tweets, "https?://[A-Za-z0-9./]*")
-    
-    #remove special characters, numbers, punctuations (except for #)
-    tweets = np.core.defchararray.replace(tweets, "[^a-zA-Z]", " ")
-    
-    return tweets
-
-
-# In[30]:
-
-
-df['text'] = clean_tweets(df['text'])
-df['text'].head()
-
-
-# In[31]:
 
 
 get_ipython().system('pip install VaderSentiment')
@@ -328,7 +296,7 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 analyzer = SentimentIntensityAnalyzer()
 
 
-# In[32]:
+# In[30]:
 
 
 scores = []
@@ -351,7 +319,7 @@ for i in range(df['text'].shape[0]):
                   })
 
 
-# In[33]:
+# In[31]:
 
 
 sentiments_score = pd.DataFrame.from_dict(scores)
@@ -359,9 +327,10 @@ df = df.join(sentiments_score)
 df.head()
 
 
-# In[34]:
+# In[32]:
 
 
+#collects the positive hashtags from the tweets data
 HT_positive = []
 def hashtag_extract(x):
     hashtags = []
@@ -378,7 +347,7 @@ HT_positive = sum(HT_positive,[])
 HT_positive
 
 
-# In[35]:
+# In[33]:
 
 
 #Collect the compound values for each news source
@@ -386,11 +355,44 @@ score_table = df.pivot_table(index='User',  values="Compound", aggfunc = np.mean
 score_table
 
 
-# In[36]:
+# In[38]:
+
+
+#Collect the compound values for each news source
+score_table = df.pivot_table(index='User',  values="Positive", aggfunc = np.mean)
+score_table
+
+
+# In[34]:
 
 
 #plotting 
 score_table.plot(kind='bar')
+
+
+# In[39]:
+
+
+#Collect the compound values for each news source
+score_table = df.pivot_table(index='User',  values="Positive", aggfunc = np.mean)
+score_table
+
+
+# In[40]:
+
+
+#Collect the negative values for each news source
+pos_score_table = df.pivot_table(index='User',  values="Positive", aggfunc = np.mean)
+pos_score_table
+pos_score_table.plot(kind='bar')
+
+
+# In[41]:
+
+
+#Collect the compound values for each news source
+score_table = df.pivot_table(index='User',  values="Negative", aggfunc = np.mean)
+score_table
 
 
 # In[37]:
