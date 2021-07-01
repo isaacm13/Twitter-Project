@@ -1,39 +1,43 @@
-quoted_status_id,lang,quoted_status_id_str,id,retweet_count,in_reply_to_status_id_str,in_reply_to_user_id_str,text,in_reply_to_screen_name,favorite_count,source_url,in_reply_to_user_id,source,id_str,in_reply_to_status_id,user,author
-,en,,1409577339869184001,72,,,"RT @devdevcharlie: It's still Pride month and I spent some time making Pride-inspired VSCode themes! 🏳️‍🌈🏳️‍⚧️
-Some flags' colour combinati…",,0,https://buffer.com,,Buffer,1409577339869184001,,code,code
-,en,,1409557409832472577,7,,,"RT @smashingmag: In today’s article, @mmatuzo shares which custom Emmet snippets he personally uses in VS Code:
+quoted_status_id,id_str,lang,in_reply_to_user_id,in_reply_to_user_id_str,source,text,quoted_status_id_str,in_reply_to_status_id_str,favorite_count,source_url,in_reply_to_screen_name,retweet_count,id,in_reply_to_status_id,user,author
+,1410357985981960200,en,,,Buffer,"RT @sarah_edo: 🎇🏹🐔
+
+I'm excited to announce... probably the most ridiculous nonsense I've ever open sourced:
+
+A Fortnite VS Code Theme!
+
+It…",,,0,https://buffer.com,,289,1410357985981960200,,code,code
+1.4102517893586944e+18,1410292113359704066,en,,,Buffer,New free resources to explore Machine Learning… With VS Code and Jupyter Notebooks 📗 https://t.co/e9S07Q6Omy,1410251789358694401,,71,https://buffer.com,,18,1410292113359704066,,code,code
+1.409932287404241e+18,1410270532734361600,en,245029223.0,245029223,TweetDeck,@Stone_Ranger @TylerLeonhardt @LearnTV Here it is: https://t.co/dERJhAlAKO,1409932287404240898,1410177165354835968,0,https://about.twitter.com/products/tweetdeck,Stone_Ranger,0,1410270532734361600,1.410177165354836e+18,code,code
+,1410263612317392899,en,,,Buffer,"RT @TylerLeonhardt: 👋 hello friends
+
+Let me know if you have any questions about @code and about authoring VS Code extensions! I'm here to…",,,0,https://buffer.com,,29,1410263612317392899,,code,code
+,1409900970788667394,en,,,Buffer,RT @github: Meet GitHub Copilot - your AI pair programmer. https://t.co/eWPueAXTFt https://t.co/NPua5K2vFS,,,0,https://buffer.com,,8219,1409900970788667394,,code,code
+,1409894440349667329,en,,,Buffer,10 mins till @TylerLeonhardt begins his live coding stream on @LearnTV ‼️ Come and learn how to build your first VS… https://t.co/LW5LVteZOv,,,53,https://buffer.com,,10,1409894440349667329,,code,code
+,1409577339869184001,en,,,Buffer,"RT @devdevcharlie: It's still Pride month and I spent some time making Pride-inspired VSCode themes! 🏳️‍🌈🏳️‍⚧️
+Some flags' colour combinati…",,,0,https://buffer.com,,121,1409577339869184001,,code,code
+,1409557409832472577,en,,,TweetDeck,"RT @smashingmag: In today’s article, @mmatuzo shares which custom Emmet snippets he personally uses in VS Code:
 https://t.co/AmOCyWrdTu
 
-Q:…",,0,https://about.twitter.com/products/tweetdeck,,TweetDeck,1409557409832472577,,code,code
-,en,,1408845776067903503,61,,,"Want to learn how to create your own VS Code extension? 🧑‍💻 In our next livestream, @TylerLeonhardt will be coding… https://t.co/RJkOCtv6Zh",,229,https://sproutsocial.com,,Sprout Social,1408845776067903503,,code,code
-1.4081146196846428e+18,en,1408114619684642816,1408536482781044737,4,,,"📊 It's Friday afternoon, feels like a good time for Asking The Questions That Matter™ 😆 https://t.co/f8dhwvxMPh",,57,https://buffer.com,,Buffer,1408536482781044737,,code,code
-,en,,1408491938697842692,21,,,RT @omgubuntu: How to Install Visual Studio Code on Ubuntu 20.04 LTS #ubuntu #code https://t.co/MYcOLvccRz https://t.co/N2XvDVyDcH,,0,https://buffer.com,,Buffer,1408491938697842692,,code,code
-,en,,1408451889868328963,63,,,"RT @Tyriar: Terminal tabs are available for testing in @code Insiders, we'd love to hear your feedback! Check out the screenshot put togeth…",,0,https://about.twitter.com/products/tweetdeck,,TweetDeck,1408451889868328963,,code,code
-,en,,1408184414199336961,2,,,"RT @codepo8: Yay @EdgeDevTools, @MicrosoftEdge and @code with shared themes and showing next to another in Windows 11. 
-(could have used ht…",,0,https://buffer.com,,Buffer,1408184414199336961,,code,code
-,en,,1408136953929687040,24,,,"RT @mattbierner: Today's @code tip: Infer function return type
+Q:…",,,0,https://about.twitter.com/products/tweetdeck,,8,1409557409832472577,,code,code
+,1408845776067903503,en,,,Sprout Social,"Want to learn how to create your own VS Code extension? 🧑‍💻 In our next livestream, @TylerLeonhardt will be coding… https://t.co/RJkOCtv6Zh",,,233,https://sproutsocial.com,,62,1408845776067903503,,code,code
+1.4081146196846428e+18,1408536482781044737,en,,,Buffer,"📊 It's Friday afternoon, feels like a good time for Asking The Questions That Matter™ 😆 https://t.co/f8dhwvxMPh",1408114619684642816,,57,https://buffer.com,,4,1408536482781044737,,code,code
+,1408491938697842692,en,,,Buffer,RT @omgubuntu: How to Install Visual Studio Code on Ubuntu 20.04 LTS #ubuntu #code https://t.co/MYcOLvccRz https://t.co/N2XvDVyDcH,,,0,https://buffer.com,,22,1408491938697842692,,code,code
+,1408451889868328963,en,,,TweetDeck,"RT @Tyriar: Terminal tabs are available for testing in @code Insiders, we'd love to hear your feedback! Check out the screenshot put togeth…",,,0,https://about.twitter.com/products/tweetdeck,,63,1408451889868328963,,code,code
+,1408184414199336961,en,,,Buffer,"RT @codepo8: Yay @EdgeDevTools, @MicrosoftEdge and @code with shared themes and showing next to another in Windows 11. 
+(could have used ht…",,,0,https://buffer.com,,2,1408184414199336961,,code,code
+,1408136953929687040,en,,,TweetDeck,"RT @mattbierner: Today's @code tip: Infer function return type
 
-Use this refactoring to quickly add explicit type annotations to functions/…",,0,https://about.twitter.com/products/tweetdeck,,TweetDeck,1408136953929687040,,code,code
-,en,,1408106202366578691,25,,,"🔎 Why is GitLens one of the most popular extensions for VS Code? 🤔 Yesterday we talked with its author @eamodio, wh… https://t.co/dUkgLye3Ra",,142,https://about.twitter.com/products/tweetdeck,,TweetDeck,1408106202366578691,,code,code
-,en,,1407794874515030017,1,1407791883896639495,17904163,@timschaeps cool - also check out the remote extensions to see if those help you work on remote environments (https://t.co/QY8bgWyYQ1),timschaeps,4,https://about.twitter.com/products/tweetdeck,17904163.0,TweetDeck,1407794874515030017,1.4077918838966395e+18,code,code
-,en,,1407783006379466754,6,,,"RT @eamodio: 👀 Come and join my GitLens livestream today at 3:30pm ET/ 12:30pm PT.
+Use this refactoring to quickly add explicit type annotations to functions/…",,,0,https://about.twitter.com/products/tweetdeck,,24,1408136953929687040,,code,code
+,1408106202366578691,en,,,TweetDeck,"🔎 Why is GitLens one of the most popular extensions for VS Code? 🤔 Yesterday we talked with its author @eamodio, wh… https://t.co/dUkgLye3Ra",,,144,https://about.twitter.com/products/tweetdeck,,25,1408106202366578691,,code,code
+,1407794874515030017,en,17904163.0,17904163,TweetDeck,@timschaeps cool - also check out the remote extensions to see if those help you work on remote environments (https://t.co/QY8bgWyYQ1),,1407791883896639495,4,https://about.twitter.com/products/tweetdeck,timschaeps,1,1407794874515030017,1.4077918838966395e+18,code,code
+,1407783006379466754,en,,,Twitter Web App,"RT @eamodio: 👀 Come and join my GitLens livestream today at 3:30pm ET/ 12:30pm PT.
 https://t.co/mJpQkPQMLz
 
-I will be going over many power…",,0,https://mobile.twitter.com,,Twitter Web App,1407783006379466754,,code,code
-,en,,1407780512144429056,9,,,📣 We're going live in 10 minutes with @eamodio to learn about his super-popular GitLens 🔎 extension for superchargi… https://t.co/1e0SZdF1jj,,42,https://sproutsocial.com,,Sprout Social,1407780512144429056,,code,code
-,en,,1407445890927935489,69,,,"RT @vasanthdevelop: VSCode Tip 💡
+I will be going over many power…",,,0,https://mobile.twitter.com,,6,1407783006379466754,,code,code
+,1407780512144429056,en,,,Sprout Social,📣 We're going live in 10 minutes with @eamodio to learn about his super-popular GitLens 🔎 extension for superchargi… https://t.co/1e0SZdF1jj,,,42,https://sproutsocial.com,,9,1407780512144429056,,code,code
+,1407445890927935489,en,,,Sprout Social,"RT @vasanthdevelop: VSCode Tip 💡
 
 You can use F2 keyboard shortcut to rename HTML tags in @code just like you can do in other apps.
 
-#100Da…",,0,https://sproutsocial.com,,Sprout Social,1407445890927935489,,code,code
-,en,,1407196434756030472,0,1407035977848135685,37740370,@ChristosMatskas @jamesdrandall @github yes we would love feedback on how to make it better!,ChristosMatskas,2,https://about.twitter.com/products/tweetdeck,37740370.0,TweetDeck,1407196434756030472,1.4070359778481357e+18,code,code
-,en,,1407195881686769671,34,,,"RT @nabiilk2: Coding on a larger monitor and want the code to be on the center of your screen ?  
-
-On #VSCode (@code) you can change the ap…",,0,https://about.twitter.com/products/tweetdeck,,TweetDeck,1407195881686769671,,code,code
-,en,,1407059443171401730,6,1407059306294480896,3167734591,@eamodio PS: here's the GitLens extension: https://t.co/04Jt5qc145,code,39,https://about.twitter.com/products/tweetdeck,3167734591.0,TweetDeck,1407059443171401730,1.407059306294481e+18,code,code
-,en,,1407059306294480896,40,,,"🔎 GitLens is a must-have extensions for VS Code, adding many features for working with Git
-📺 This Wednesday join Gi… https://t.co/GyAaI1hoGw",,128,https://about.twitter.com/products/tweetdeck,,TweetDeck,1407059306294480896,,code,code
-1.4055385030483272e+18,en,1405538503048327169,1405999767604416512,7,,,RT @ClaudiaRegio: Want to learn about #jupyter notebooks in @code and how it can improve your #Python #DataScience workflow?? Come sign up…,,0,https://buffer.com,,Buffer,1405999767604416512,,code,code
-1.405552832208683e+18,en,1405552832208683011,1405918729045692419,8,,,"Missed the livestream? You can now catch it on-demand on our YouTube channel📺
-Watch 👉 https://t.co/Kr15EV5SoW https://t.co/25OfnwmRIG",,49,https://prod1.sprinklr.com,,Sprinklr Publishing,1405918729045692419,,code,code
-,en,,1405647699483967493,241,,,"RT @LeoKac333: Check out my VSCode extension - Blockman, took me 6 months to build. Supports Python and many other languages. Please help m…",,0,https://buffer.com,,Buffer,1405647699483967493,,code,code
+#100Da…",,,0,https://sproutsocial.com,,69,1407445890927935489,,code,code
+,1407196434756030472,en,37740370.0,37740370,TweetDeck,@ChristosMatskas @jamesdrandall @github yes we would love feedback on how to make it better!,,1407035977848135685,2,https://about.twitter.com/products/tweetdeck,ChristosMatskas,0,1407196434756030472,1.4070359778481357e+18,code,code
