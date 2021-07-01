@@ -138,17 +138,29 @@ df1.head(201)
 # In[15]:
 
 
-df1.to_csv('tweetspreadsheet.csv', index=False)
+df1.describe()
 
 
 # In[16]:
+
+
+df1.shape
+
+
+# In[17]:
+
+
+df1.to_csv('tweetspreadsheet.csv', index=False)
+
+
+# In[18]:
 
 
 df1_saved_file = pd.read_csv('tweetspreadsheet.csv')
 df1_saved_file
 
 
-# In[17]:
+# In[19]:
 
 
 # screen name of the account to be fetched
@@ -162,10 +174,10 @@ statuses = api.user_timeline(screen_name, count = count)
   
 # printing the statuses
 for status in statuses:
-    print(status.text, end = "\n\n")
+    print(status.text, end = "\n\n") 
 
 
-# In[18]:
+# In[20]:
 
 
 #search_words = ["#covid19", "2020", "lockdown"]
@@ -185,7 +197,7 @@ for tweet in tweets:
 ## tweet.user.location will give you the general location of the user and not the particular location for the tweet itself, as it turns out, most of the users do not share the exact location of the tweet
 
 
-# In[19]:
+# In[21]:
 
 
 date_since = '2021-06-14'
@@ -195,14 +207,14 @@ for tweet in tweets:
     print (tweet.text)  
 
 
-# In[20]:
+# In[22]:
 
 
 for status in tweepy.Cursor(api.user_timeline, screen_name='@code', tweet_mode="extended").items():
     print(status.full_text)
 
 
-# In[21]:
+# In[23]:
 
 
 #This code to find out the trending topic on Twitter. Purpose of use for market research. 
@@ -211,7 +223,7 @@ for status in tweepy.Cursor(api.user_timeline, screen_name='@code', tweet_mode="
 #adjusted by changing variables names and accounts to compare statistical data of
 
 
-# In[22]:
+# In[24]:
 
 
 consumer_key = "jzn0NU9EviCRRbONbUXX9a8VN"
@@ -227,13 +239,13 @@ def initialize():
 api = initialize()
 
 
-# In[23]:
+# In[25]:
 
 
 comp_searches = ("@socialmedia2day", "@GoogleAds", "@Instagram", "@Facebook", "@Twitter")
 
 
-# In[24]:
+# In[26]:
 
 
 # Array to hold sentiment
@@ -258,7 +270,7 @@ for search in comp_searches:
                         })
 
 
-# In[25]:
+# In[27]:
 
 
 #convert array to dataframe
@@ -266,28 +278,34 @@ df = pd.DataFrame.from_dict(sentiments)
 df.head(1002)#limit is 1000 rows
 
 
-# In[26]:
+# In[28]:
 
 
 df.to_csv('tweetsentimentanalysis.csv', index=False)
 
 
-# In[27]:
+# In[29]:
 
 
 df_saved_file = pd.read_csv('tweetsentimentanalysis.csv')
 df_saved_file
 
 
-# In[28]:
+# In[30]:
 
 
-#to see tweets for specific User name 
-df_tesla = df[ df['User'] == input("Enter Twitter username from list only:")] #@socialmedia2day", "@GoogleAds", "@Instagram", "@Facebook", "@Twitter"
-df_tesla.head()
+# #to see tweets for specific User name
+# for index in range(5):
+#     while True:
+#         i = df_top5tweets = df[ df['User'] == input("Enter Twitter username from list only:")] #@socialmedia2day", "@GoogleAds", "@Instagram", "@Facebook", "@Twitter"
+#         i = str(i)
+#         if i == 1:
+#             print(df_top5tweets.head())
+#             break 
+#     df_top5tweets.head()
 
 
-# In[29]:
+# In[31]:
 
 
 get_ipython().system('pip install VaderSentiment')
@@ -296,7 +314,7 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 analyzer = SentimentIntensityAnalyzer()
 
 
-# In[30]:
+# In[32]:
 
 
 scores = []
@@ -319,7 +337,7 @@ for i in range(df['text'].shape[0]):
                   })
 
 
-# In[31]:
+# In[33]:
 
 
 sentiments_score = pd.DataFrame.from_dict(scores)
@@ -327,7 +345,7 @@ df = df.join(sentiments_score)
 df.head()
 
 
-# In[32]:
+# In[34]:
 
 
 #collects the positive hashtags from the tweets data
@@ -347,7 +365,7 @@ HT_positive = sum(HT_positive,[])
 HT_positive
 
 
-# In[33]:
+# In[35]:
 
 
 #Collect the compound values for each news source
@@ -355,22 +373,14 @@ score_table = df.pivot_table(index='User',  values="Compound", aggfunc = np.mean
 score_table
 
 
-# In[38]:
-
-
-#Collect the compound values for each news source
-score_table = df.pivot_table(index='User',  values="Positive", aggfunc = np.mean)
-score_table
-
-
-# In[34]:
+# In[36]:
 
 
 #plotting 
 score_table.plot(kind='bar')
 
 
-# In[39]:
+# In[37]:
 
 
 #Collect the compound values for each news source
@@ -378,7 +388,7 @@ score_table = df.pivot_table(index='User',  values="Positive", aggfunc = np.mean
 score_table
 
 
-# In[40]:
+# In[38]:
 
 
 #Collect the negative values for each news source
@@ -387,7 +397,7 @@ pos_score_table
 pos_score_table.plot(kind='bar')
 
 
-# In[41]:
+# In[39]:
 
 
 #Collect the compound values for each news source
@@ -395,13 +405,56 @@ score_table = df.pivot_table(index='User',  values="Negative", aggfunc = np.mean
 score_table
 
 
-# In[37]:
+# In[40]:
 
 
 #Collect the negative values for each news source
 neg_score_table = df.pivot_table(index='User',  values="Negative", aggfunc = np.mean)
 neg_score_table
 neg_score_table.plot(kind='bar')
+
+
+# In[41]:
+
+
+#Collect the negative values for each news source
+neg_score_table = df.pivot_table(index='User',  values="Negative", aggfunc = np.mean)
+neg_score_table
+
+
+# In[42]:
+
+
+from pandas import DataFrame
+#creates list for top positive hashtags used between comp_searches variable 
+from collections import Counter
+word_appearance_count = dict(Counter(HT_positive))
+df4 = DataFrame (HT_positive, columns = ['Positive HT']) #, 'Count']
+print(df4)
+
+
+# In[43]:
+
+
+from collections import Counter
+a = dict(Counter(HT_positive))
+print(a)
+
+
+# In[44]:
+
+
+t = list(a.items())
+print(t)
+
+
+# In[45]:
+
+
+import pandas as pd
+#tuples = [(letter, idx) for idx, letter in enumerate(t)]
+df = pd.DataFrame(t, columns=["Positive Hashtag", "Number of Occurence"])
+print(df)
 
 
 # In[ ]:
