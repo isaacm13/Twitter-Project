@@ -294,15 +294,16 @@ df_saved_file
 # In[30]:
 
 
-# #to see tweets for specific User name
-# for index in range(5):
-#     while True:
-#         i = df_top5tweets = df[ df['User'] == input("Enter Twitter username from list only:")] #@socialmedia2day", "@GoogleAds", "@Instagram", "@Facebook", "@Twitter"
-#         i = str(i)
-#         if i == 1:
-#             print(df_top5tweets.head())
-#             break 
-#     df_top5tweets.head()
+#to see tweets for specific User name
+#for index in range(5):
+df = pd.DataFrame.from_dict(sentiments)
+while True:
+    i = df_top5tweets = df[ df['User'] == input("Enter Twitter username from list only:")] #@socialmedia2day", "@GoogleAds", "@Instagram", "@Facebook", "@Twitter"
+    i = str(i)
+    if i == 1:
+        print(df_top5tweets.head())
+        break 
+df_top5tweets.head()
 
 
 # In[31]:
