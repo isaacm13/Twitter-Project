@@ -1,42 +1,46 @@
-in_reply_to_user_id,in_reply_to_user_id_str,text,in_reply_to_status_id_str,source,id,lang,quoted_status_id,in_reply_to_screen_name,in_reply_to_status_id,source_url,id_str,quoted_status_id_str,favorite_count,retweet_count,user,author
-,,"RT @mattbierner: Today's @code extension: https://t.co/aYHpTVTnFt Integration
+text,in_reply_to_user_id_str,id_str,retweet_count,quoted_status_id,source,quoted_status_id_str,lang,in_reply_to_status_id_str,in_reply_to_user_id,id,source_url,favorite_count,in_reply_to_status_id,in_reply_to_screen_name,user,author
+"Coding in VS Code with @GitHub Copilot 🪄
+https://t.co/4SYDyYFYQ4",,1412894699166257158,9,,Buffer,,en,,,1412894699166257158,https://buffer.com,51,,,code,code
+Have you seen our Machine Learning for beginner course? 🎓 Get started with ML using notebooks in VS Code👇 https://t.co/QmezIHoZpn,,1412845130818768897,28,1.410703348915794e+18,Buffer,1410703348915793921,en,,,1412845130818768897,https://buffer.com,213,,,code,code
+"@jfarrell Yes! You can set language-specific editor settings globally: https://t.co/1fvkjTkuIA
+This includes setting ""editor.tabSize""",14274247,1412821871075074048,0,,TweetDeck,,en,1412563693540458496,14274247.0,1412821871075074048,https://about.twitter.com/products/tweetdeck,2,1.4125636935404585e+18,jfarrell,code,code
+"RT @Soham_Asmi: Tired of seeing the same extension mentioned in every VSCode extension thread? 
 
-View and edit https://t.co/aYHpTVTnFt diagrams directly in V…",,TweetDeck,1411124902984257537,en,,,,https://about.twitter.com/products/tweetdeck,1411124902984257537,,0,7,code,code
-,,"RT @chrisraygill: Hi VS @code friends 👋
+Here's a list of extensions that I persona…",,1412820977843507204,34,,TweetDeck,,en,,,1412820977843507204,https://about.twitter.com/products/tweetdeck,0,,,code,code
+"RT @clintgibler: 🌎 New @code extension: Remote Repositories
+
+@BrigitMurtaugh and @eamodio describe how it lets you  quickly browse, search,…",,1412475941717217284,22,,Buffer,,en,,,1412475941717217284,https://buffer.com,0,,,code,code
+What is Workspace Trust and why did we have to add it in VS Code? @chrisdias explains how these pop-ups asking if y… https://t.co/XbmDrx4BMe,,1412464287130394629,29,,TweetDeck,,en,,,1412464287130394629,https://about.twitter.com/products/tweetdeck,116,,,code,code
+"RT @TarasNovak: Houston, we have lift off! Here is a basic thml #DataTableView 🈸 for @code #notebooks 📚: https://t.co/AVAC8v24ip
+#dataTools…",,1411372420166995972,25,,Buffer,,en,,,1411372420166995972,https://buffer.com,0,,,code,code
+"RT @mattbierner: Today's @code extension: https://t.co/aYHpTVTnFt Integration
+
+View and edit https://t.co/aYHpTVTnFt diagrams directly in V…",,1411124902984257537,185,,TweetDeck,,en,,,1411124902984257537,https://about.twitter.com/products/tweetdeck,0,,,code,code
+"RT @chrisraygill: Hi VS @code friends 👋
 
 I made an issue with the proposal for verifying extension publisher domains:
 
-https://t.co/Ez51oXQ…",,Twitter Web App,1410986658355425281,en,1.40232974448239e+18,,,https://mobile.twitter.com,1410986658355425281,1402329744482390016,0,8,code,code
-9.124164044266332e+17,912416404426633221,@xcolbyg can you file an issue? https://t.co/zQra0rLgYx cc @Tyriar,1410251889216835584,TweetDeck,1410684377399443457,en,,xcolbyg,1.4102518892168356e+18,https://about.twitter.com/products/tweetdeck,1410684377399443457,,1,0,code,code
-11752902.0,11752902,"@ryanguill yup! turn on the ""files.hotExit"" setting",1410607117275308042,Twitter Web App,1410683749948403713,en,,ryanguill,1.410607117275308e+18,https://mobile.twitter.com,1410683749948403713,,35,6,code,code
-,,"RT @sarah_edo: 🎇🏹🐔
+https://t.co/Ez51oXQ…",,1410986658355425281,10,1.40232974448239e+18,Twitter Web App,1402329744482390016,en,,,1410986658355425281,https://mobile.twitter.com,0,,,code,code
+@xcolbyg can you file an issue? https://t.co/zQra0rLgYx cc @Tyriar,912416404426633221,1410684377399443457,0,,TweetDeck,,en,1410251889216835584,9.124164044266332e+17,1410684377399443457,https://about.twitter.com/products/tweetdeck,1,1.4102518892168356e+18,xcolbyg,code,code
+"@ryanguill yup! turn on the ""files.hotExit"" setting",11752902,1410683749948403713,6,,Twitter Web App,,en,1410607117275308042,11752902.0,1410683749948403713,https://mobile.twitter.com,37,1.410607117275308e+18,ryanguill,code,code
+"RT @sarah_edo: 🎇🏹🐔
 
 I'm excited to announce... probably the most ridiculous nonsense I've ever open sourced:
 
 A Fortnite VS Code Theme!
 
-It…",,Buffer,1410357985981960200,en,,,,https://buffer.com,1410357985981960200,,0,350,code,code
-,,New free resources to explore Machine Learning… With VS Code and Jupyter Notebooks 📗 https://t.co/e9S07Q6Omy,,Buffer,1410292113359704066,en,1.4102517893586944e+18,,,https://buffer.com,1410292113359704066,1410251789358694401,91,24,code,code
-245029223.0,245029223,@Stone_Ranger @TylerLeonhardt @LearnTV Here it is: https://t.co/dERJhAlAKO,1410177165354835968,TweetDeck,1410270532734361600,en,1.409932287404241e+18,Stone_Ranger,1.410177165354836e+18,https://about.twitter.com/products/tweetdeck,1410270532734361600,1409932287404240898,1,0,code,code
-,,"RT @TylerLeonhardt: 👋 hello friends
+It…",,1410357985981960200,360,,Buffer,,en,,,1410357985981960200,https://buffer.com,0,,,code,code
+New free resources to explore Machine Learning… With VS Code and Jupyter Notebooks 📗 https://t.co/e9S07Q6Omy,,1410292113359704066,28,1.4102517893586944e+18,Buffer,1410251789358694401,en,,,1410292113359704066,https://buffer.com,99,,,code,code
+@Stone_Ranger @TylerLeonhardt @LearnTV Here it is: https://t.co/dERJhAlAKO,245029223,1410270532734361600,0,1.409932287404241e+18,TweetDeck,1409932287404240898,en,1410177165354835968,245029223.0,1410270532734361600,https://about.twitter.com/products/tweetdeck,1,1.410177165354836e+18,Stone_Ranger,code,code
+"RT @TylerLeonhardt: 👋 hello friends
 
-Let me know if you have any questions about @code and about authoring VS Code extensions! I'm here to…",,Buffer,1410263612317392899,en,,,,https://buffer.com,1410263612317392899,,0,30,code,code
-,,RT @github: Meet GitHub Copilot - your AI pair programmer. https://t.co/eWPueAXTFt https://t.co/NPua5K2vFS,,Buffer,1409900970788667394,en,,,,https://buffer.com,1409900970788667394,,0,8767,code,code
-,,10 mins till @TylerLeonhardt begins his live coding stream on @LearnTV ‼️ Come and learn how to build your first VS… https://t.co/LW5LVteZOv,,Buffer,1409894440349667329,en,,,,https://buffer.com,1409894440349667329,,53,12,code,code
-,,"RT @devdevcharlie: It's still Pride month and I spent some time making Pride-inspired VSCode themes! 🏳️‍🌈🏳️‍⚧️
-Some flags' colour combinati…",,Buffer,1409577339869184001,en,,,,https://buffer.com,1409577339869184001,,0,123,code,code
-,,"RT @smashingmag: In today’s article, @mmatuzo shares which custom Emmet snippets he personally uses in VS Code:
+Let me know if you have any questions about @code and about authoring VS Code extensions! I'm here to…",,1410263612317392899,30,,Buffer,,en,,,1410263612317392899,https://buffer.com,0,,,code,code
+RT @github: Meet GitHub Copilot - your AI pair programmer. https://t.co/eWPueAXTFt https://t.co/NPua5K2vFS,,1409900970788667394,9035,,Buffer,,en,,,1409900970788667394,https://buffer.com,0,,,code,code
+10 mins till @TylerLeonhardt begins his live coding stream on @LearnTV ‼️ Come and learn how to build your first VS… https://t.co/LW5LVteZOv,,1409894440349667329,12,,Buffer,,en,,,1409894440349667329,https://buffer.com,55,,,code,code
+"RT @devdevcharlie: It's still Pride month and I spent some time making Pride-inspired VSCode themes! 🏳️‍🌈🏳️‍⚧️
+Some flags' colour combinati…",,1409577339869184001,123,,Buffer,,en,,,1409577339869184001,https://buffer.com,0,,,code,code
+"RT @smashingmag: In today’s article, @mmatuzo shares which custom Emmet snippets he personally uses in VS Code:
 https://t.co/AmOCyWrdTu
 
-Q:…",,TweetDeck,1409557409832472577,en,,,,https://about.twitter.com/products/tweetdeck,1409557409832472577,,0,9,code,code
-,,"Want to learn how to create your own VS Code extension? 🧑‍💻 In our next livestream, @TylerLeonhardt will be coding… https://t.co/RJkOCtv6Zh",,Sprout Social,1408845776067903503,en,,,,https://sproutsocial.com,1408845776067903503,,234,62,code,code
-,,"📊 It's Friday afternoon, feels like a good time for Asking The Questions That Matter™ 😆 https://t.co/f8dhwvxMPh",,Buffer,1408536482781044737,en,1.4081146196846428e+18,,,https://buffer.com,1408536482781044737,1408114619684642816,56,4,code,code
-,,RT @omgubuntu: How to Install Visual Studio Code on Ubuntu 20.04 LTS #ubuntu #code https://t.co/MYcOLvccRz https://t.co/N2XvDVyDcH,,Buffer,1408491938697842692,en,,,,https://buffer.com,1408491938697842692,,0,22,code,code
-,,"RT @Tyriar: Terminal tabs are available for testing in @code Insiders, we'd love to hear your feedback! Check out the screenshot put togeth…",,TweetDeck,1408451889868328963,en,,,,https://about.twitter.com/products/tweetdeck,1408451889868328963,,0,64,code,code
-,,"RT @codepo8: Yay @EdgeDevTools, @MicrosoftEdge and @code with shared themes and showing next to another in Windows 11. 
-(could have used ht…",,Buffer,1408184414199336961,en,,,,https://buffer.com,1408184414199336961,,0,2,code,code
-,,"RT @mattbierner: Today's @code tip: Infer function return type
-
-Use this refactoring to quickly add explicit type annotations to functions/…",,TweetDeck,1408136953929687040,en,,,,https://about.twitter.com/products/tweetdeck,1408136953929687040,,0,24,code,code
-,,"🔎 Why is GitLens one of the most popular extensions for VS Code? 🤔 Yesterday we talked with its author @eamodio, wh… https://t.co/dUkgLye3Ra",,TweetDeck,1408106202366578691,en,,,,https://about.twitter.com/products/tweetdeck,1408106202366578691,,141,25,code,code
-17904163.0,17904163,@timschaeps cool - also check out the remote extensions to see if those help you work on remote environments (https://t.co/QY8bgWyYQ1),1407791883896639495,TweetDeck,1407794874515030017,en,,timschaeps,1.4077918838966395e+18,https://about.twitter.com/products/tweetdeck,1407794874515030017,,4,1,code,code
+Q:…",,1409557409832472577,10,,TweetDeck,,en,,,1409557409832472577,https://about.twitter.com/products/tweetdeck,0,,,code,code
+"Want to learn how to create your own VS Code extension? 🧑‍💻 In our next livestream, @TylerLeonhardt will be coding… https://t.co/RJkOCtv6Zh",,1408845776067903503,62,,Sprout Social,,en,,,1408845776067903503,https://sproutsocial.com,234,,,code,code
