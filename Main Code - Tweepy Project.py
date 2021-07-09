@@ -206,7 +206,7 @@ print("Date format is as follows: Year-Month-Day= 0000-00-00")
 print("Date range must be within a 7 day range")
 date_since = input("Enter beginging date: ")#'2021-06-14'
 date_until = input("Enter last date: ")#'2021-06-21'
-tweets = tweepy.Cursor(api.search,q= input("Enter key word to search through Twitter's API of relevant Tweets: "), since=date_since,until=date_until).items(10) #'olympic'
+tweets = tweepy.Cursor(api.search, geocode="38.892062,-77.019912,3000km", lang="en", q= input("Enter key word to search through Twitter's API of relevant Tweets: "), since=date_since,until=date_until).items(10) #'olympic'
 for tweet in tweets:         
     print (tweet.text)  
 
@@ -353,13 +353,6 @@ print("User name selection finished:",  requested_users_list)
 # In[35]:
 
 
-# As I'm lazy I'm just assuming the user selected these namesL
-requested_users_list = ['@socialmedia2day', '@GoogleAds', '@Instagram', '@Facebook', '@Twitter']
-
-
-# In[36]:
-
-
 tweet_list = []
 # Pull out the newest tweet for a name and store in list
 for n in requested_users_list:
@@ -378,7 +371,7 @@ for n in requested_users_list:
     tweet_list.append(latest_tweet)
 
 
-# In[37]:
+# In[36]:
 
 
 # make a new df by glueing together the dataframes contained in the list
@@ -389,23 +382,23 @@ df_top5tweets = pd.concat(tweet_list,
 print(df_top5tweets.head())
 
 # You seem to later call this df ....
-df = df_top5tweets
+df5 = df_top5tweets
 
 
-# In[38]:
+# In[37]:
 
 
 #CH portion stopped
 
 
-# In[39]:
+# In[38]:
 
 
 df_saved_file = pd.read_csv('tweetsentimentanalysis.csv')
 df_saved_file
 
 
-# In[40]:
+# In[39]:
 
 
 get_ipython().system('pip install VaderSentiment')
@@ -414,7 +407,7 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 analyzer = SentimentIntensityAnalyzer()
 
 
-# In[41]:
+# In[40]:
 
 
 scores = []
@@ -437,7 +430,7 @@ for i in range(df['text'].shape[0]):
                   })
 
 
-# In[42]:
+# In[41]:
 
 
 sentiments_score = pd.DataFrame.from_dict(scores)
@@ -445,10 +438,10 @@ df = df.join(sentiments_score)
 df.head()
 
 
-# In[43]:
+# In[42]:
 
 
-#collects the positive hashtags from the tweets data
+#collects the compound positive hashtags from the tweets data
 HT_positive = []
 def hashtag_extract(x):
     hashtags = []
@@ -459,13 +452,13 @@ def hashtag_extract(x):
     return hashtags
 # extracting hashtags from positive tweetsHT_positive = hashtag_extract(df_tws['text'][df_tws['sent'] == 1])
 # extracting hashtags from  tweets
-HT_positive = hashtag_extract(df['text'][df['Compound'] > 0.5])
+HT_positive = hashtag_extract(df['text'][df['Compound'] > 0.5]) 
 # unnesting list
 HT_positive = sum(HT_positive,[])
 HT_positive
 
 
-# In[44]:
+# In[43]:
 
 
 #Collect the compound values for each news source
@@ -473,14 +466,14 @@ score_table = df.pivot_table(index='User',  values="Compound", aggfunc = np.mean
 score_table
 
 
-# In[45]:
+# In[44]:
 
 
 #plotting 
 score_table.plot(kind='bar')
 
 
-# In[46]:
+# In[45]:
 
 
 #Collect the compound values for each news source
@@ -488,7 +481,7 @@ score_table = df.pivot_table(index='User',  values="Positive", aggfunc = np.mean
 score_table
 
 
-# In[47]:
+# In[46]:
 
 
 #Collect the negative values for each news source
@@ -497,7 +490,7 @@ pos_score_table
 pos_score_table.plot(kind='bar')
 
 
-# In[48]:
+# In[47]:
 
 
 #Collect the compound values for each news source
@@ -505,7 +498,7 @@ score_table = df.pivot_table(index='User',  values="Negative", aggfunc = np.mean
 score_table
 
 
-# In[49]:
+# In[48]:
 
 
 #Collect the negative values for each news source
@@ -514,7 +507,7 @@ neg_score_table
 neg_score_table.plot(kind='bar')
 
 
-# In[50]:
+# In[49]:
 
 
 #Collect the negative values for each news source
@@ -522,43 +515,16 @@ neg_score_table = df.pivot_table(index='User',  values="Negative", aggfunc = np.
 neg_score_table
 
 
-# In[51]:
-
-
-from pandas import DataFrame
-#creates list for top positive hashtags used between comp_searches variable 
-from collections import Counter
-word_appearance_count = dict(Counter(HT_positive))
-df4 = DataFrame (HT_positive, columns = ['Positive HT']) #, 'Count']
-print(df4)
-
-
-# In[52]:
+# In[50]:
 
 
 from collections import Counter
-a = dict(Counter(HT_positive))
-print(a)
-
-
-# In[53]:
-
-
-t = list(a.items())
-print(t)
-
-
-# In[54]:
-
-
 import pandas as pd
+a = dict(Counter(HT_positive))
+t = list(a.items()) #added from line 52
 #tuples = [(letter, idx) for idx, letter in enumerate(t)]
-df = pd.DataFrame(t, columns=["Positive Hashtag", "Number of Occurence"])
-print(df)
-
-
-# In[ ]:
-
-
-
+df = pd.DataFrame(t, columns=["Hashtags", "Number of Occurence"])
+df.to_csv('hashtags.csv', index=False)
+df4_saved_file = pd.read_csv('hashtags.csv')
+df4_saved_file
 
