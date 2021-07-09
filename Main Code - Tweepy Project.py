@@ -115,12 +115,12 @@ def extract_timeline_as_df(timeline_list):
 
 
 # pulls data from Visual Studio Code's twitter page https://twitter.com/code
-screen_name = "code"
+screen_name = input("Enter twitter's username to pull data from: ") #"code"
 #user = api.get_user(screen_name)
 #user_timeline = user.timeline(screen_name)  # recent tweets are pulled in the spreadsheet
 #print(user_timeline) 
 # fetching the statuses
-user_timeline = api.user_timeline(screen_name, count=200)#tweet count limit is 200
+user_timeline = api.user_timeline(screen_name, count=201)#tweet count limit is 200
 df1 = extract_timeline_as_df(user_timeline)
 print(df1)
 
@@ -128,7 +128,7 @@ print(df1)
 # In[14]:
 
 
-screen_name = "code" #pulls data from Visual Studio Code's twitter page https://twitter.com/code
+screen_name = input("Enter twitter's username to pull data from: ") #pulls data from Visual Studio Code's twitter page https://twitter.com/code
 user = api.get_user(screen_name)
 user_timeline = user.timeline() 
 df1 = extract_timeline_as_df(user_timeline) #recent tweets are pulled in the spreadsheet
@@ -164,10 +164,11 @@ df1_saved_file
 
 
 # screen name of the account to be fetched
-screen_name = "code"
+screen_name = input("Enter twitter's username to see recent tweet interactions: ")
+#will display last fetched tweet as the Twitter account's "Pinned Tweet" if they have a pinned tweet
   
 # number of statuses to be fetched
-count = 3
+count = 5
   
 # fetching the statuses
 statuses = api.user_timeline(screen_name, count = count)
@@ -181,7 +182,7 @@ for status in statuses:
 
 
 #search_words = ["#covid19", "2020", "lockdown"]
-key_word = '@code' #searches all tweets that reference the key_word specified 
+key_word = input("Enter key word to  pull from Twitter: ")#'@code' #searches all tweets that reference the key_word specified 
 date_since = "2021-06-21"
 
 tweets = tweepy.Cursor(api.search, key_word, geocode="38.892062,-77.019912,3000km", lang="en", since=date_since).items(10)
@@ -200,9 +201,12 @@ for tweet in tweets:
 # In[21]:
 
 
-date_since = '2021-06-14'
-date_until = '2021-06-21'
-tweets = tweepy.Cursor(api.search,q='test', since=date_since,until=date_until).items(10)
+#searches all relevant tweet as specified from date range 
+print("Date format is as follows: Year-Month-Day= 0000-00-00")
+print("Date range must be within a 7 day range")
+date_since = input("Enter beginging date: ")#'2021-06-14'
+date_until = input("Enter last date: ")#'2021-06-21'
+tweets = tweepy.Cursor(api.search,q= input("Enter key word to search through Twitter's API of relevant Tweets: "), since=date_since,until=date_until).items(10) #'olympic'
 for tweet in tweets:         
     print (tweet.text)  
 
@@ -210,7 +214,7 @@ for tweet in tweets:
 # In[22]:
 
 
-for status in tweepy.Cursor(api.user_timeline, screen_name='@code', tweet_mode="extended").items():
+for status in tweepy.Cursor(api.user_timeline, screen_name= input("Enter Twitter Username: "), tweet_mode="extended").items(): #'@code'
     print(status.full_text)
 
 
@@ -287,26 +291,121 @@ df.to_csv('tweetsentimentanalysis.csv', index=False)
 # In[29]:
 
 
-df_saved_file = pd.read_csv('tweetsentimentanalysis.csv')
-df_saved_file
+#CH portion incorporated
 
 
 # In[30]:
 
 
-#to see tweets for specific User name
-#for index in range(5):
-df = pd.DataFrame.from_dict(sentiments)
-while True:
-    i = df_top5tweets = df[ df['User'] == input("Enter Twitter username from list only:")] #@socialmedia2day", "@GoogleAds", "@Instagram", "@Facebook", "@Twitter"
-    i = str(i)
-    if i == 1:
-        print(df_top5tweets.head())
-        break 
-df_top5tweets.head()
+import pandas as pd
+df_saved_file = pd.read_csv('tweetsentimentanalysis.csv')
+print(df_saved_file.head())
+
+# Date right now is just a string, but as we need to sort by it later, it needs to be converted into a DateTime object
+# otherwise the sorting would just be alphabetical and not by time
+df_saved_file['Date'] = pd.to_datetime(df_saved_file['Date'])
+print(df_saved_file.head())
+df_saved_file['Date'].dtype # just proof that Date is now of a special datetime type
 
 
 # In[31]:
+
+
+# Quick test to see if sorting by data (new to old) works
+df_saved_file.sort_values(by="Date", ascending=False).head(20)
+
+
+# In[32]:
+
+
+# CH: I _think_ you want the top tweet for each of your 5 Users in df_saved_file with "top" being the newest tweet(?)
+# My strategy would be to have your user input a list of requested users first and then process that list
+
+
+# In[33]:
+
+
+# which users do we have in the df? Only those are valid input names.
+unique_users = df_saved_file["User"].unique() # will create a numpy array with all user names in your df
+print(type(unique_users))
+print(unique_users) # you can use it like a list of strings
+
+
+# In[34]:
+
+
+requested_users_list = [] # will contains valid(!) user names that your users want's to work with later
+print("Input the user names you want to work with")
+while True:
+    print("Valid user names:", unique_users)
+    print("Currently requested user names", requested_users_list)
+    name = input("Enter name from valid user list or Enter to finish")
+    if name == "": break  # enter key, quit loop
+    if name not in unique_users:
+        print("Invalid user, try again")
+        continue
+
+    requested_users_list.append(name)
+    
+print("User name selection finished:",  requested_users_list)
+
+
+# In[35]:
+
+
+# As I'm lazy I'm just assuming the user selected these namesL
+requested_users_list = ['@socialmedia2day', '@GoogleAds', '@Instagram', '@Facebook', '@Twitter']
+
+
+# In[36]:
+
+
+tweet_list = []
+# Pull out the newest tweet for a name and store in list
+for n in requested_users_list:
+    print("\n", n)
+    df_for_user = df_saved_file[df_saved_file["User"] == n]   # isolate by user
+    #print(df_for_user.head())
+
+    df_sorted = df_for_user.sort_values(by="Date", ascending=False) # sort by date (new to old)
+    df_sorted = df_sorted.reset_index(drop=True)  # make index numbers start with 0
+    print(df_sorted.head())
+
+    # pull out a dataframe with the 1 newest tweet for that user
+    # I know loc[0:0] looks weird but it grabs a single row but still makes a valid dataframe from it. With loc[0], you'd get a Series instead
+    # and that is more complex to make into a larger dataframe later.
+    latest_tweet = df_sorted.loc[0:0]  # or loc[0:2] for the 3 newest tweets, etc.
+    tweet_list.append(latest_tweet)
+
+
+# In[37]:
+
+
+# make a new df by glueing together the dataframes contained in the list
+# this would also work if you had pull out more than the 0 newest row
+df_top5tweets = pd.concat(tweet_list,   
+                        axis=0, # glue together row-wise, not column wise 
+                        ignore_index=True) # re-index new dataframe to start from 0
+print(df_top5tweets.head())
+
+# You seem to later call this df ....
+df = df_top5tweets
+
+
+# In[38]:
+
+
+#CH portion stopped
+
+
+# In[39]:
+
+
+df_saved_file = pd.read_csv('tweetsentimentanalysis.csv')
+df_saved_file
+
+
+# In[40]:
 
 
 get_ipython().system('pip install VaderSentiment')
@@ -315,7 +414,7 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 analyzer = SentimentIntensityAnalyzer()
 
 
-# In[32]:
+# In[41]:
 
 
 scores = []
@@ -338,7 +437,7 @@ for i in range(df['text'].shape[0]):
                   })
 
 
-# In[33]:
+# In[42]:
 
 
 sentiments_score = pd.DataFrame.from_dict(scores)
@@ -346,7 +445,7 @@ df = df.join(sentiments_score)
 df.head()
 
 
-# In[34]:
+# In[43]:
 
 
 #collects the positive hashtags from the tweets data
@@ -366,7 +465,7 @@ HT_positive = sum(HT_positive,[])
 HT_positive
 
 
-# In[35]:
+# In[44]:
 
 
 #Collect the compound values for each news source
@@ -374,14 +473,14 @@ score_table = df.pivot_table(index='User',  values="Compound", aggfunc = np.mean
 score_table
 
 
-# In[36]:
+# In[45]:
 
 
 #plotting 
 score_table.plot(kind='bar')
 
 
-# In[37]:
+# In[46]:
 
 
 #Collect the compound values for each news source
@@ -389,7 +488,7 @@ score_table = df.pivot_table(index='User',  values="Positive", aggfunc = np.mean
 score_table
 
 
-# In[38]:
+# In[47]:
 
 
 #Collect the negative values for each news source
@@ -398,7 +497,7 @@ pos_score_table
 pos_score_table.plot(kind='bar')
 
 
-# In[39]:
+# In[48]:
 
 
 #Collect the compound values for each news source
@@ -406,7 +505,7 @@ score_table = df.pivot_table(index='User',  values="Negative", aggfunc = np.mean
 score_table
 
 
-# In[40]:
+# In[49]:
 
 
 #Collect the negative values for each news source
@@ -415,7 +514,7 @@ neg_score_table
 neg_score_table.plot(kind='bar')
 
 
-# In[41]:
+# In[50]:
 
 
 #Collect the negative values for each news source
@@ -423,7 +522,7 @@ neg_score_table = df.pivot_table(index='User',  values="Negative", aggfunc = np.
 neg_score_table
 
 
-# In[42]:
+# In[51]:
 
 
 from pandas import DataFrame
@@ -434,7 +533,7 @@ df4 = DataFrame (HT_positive, columns = ['Positive HT']) #, 'Count']
 print(df4)
 
 
-# In[43]:
+# In[52]:
 
 
 from collections import Counter
@@ -442,14 +541,14 @@ a = dict(Counter(HT_positive))
 print(a)
 
 
-# In[44]:
+# In[53]:
 
 
 t = list(a.items())
 print(t)
 
 
-# In[45]:
+# In[54]:
 
 
 import pandas as pd
