@@ -1,46 +1,21 @@
-text,in_reply_to_user_id_str,id_str,retweet_count,quoted_status_id,source,quoted_status_id_str,lang,in_reply_to_status_id_str,in_reply_to_user_id,id,source_url,favorite_count,in_reply_to_status_id,in_reply_to_screen_name,user,author
-"Coding in VS Code with @GitHub Copilot 🪄
-https://t.co/4SYDyYFYQ4",,1412894699166257158,9,,Buffer,,en,,,1412894699166257158,https://buffer.com,51,,,code,code
-Have you seen our Machine Learning for beginner course? 🎓 Get started with ML using notebooks in VS Code👇 https://t.co/QmezIHoZpn,,1412845130818768897,28,1.410703348915794e+18,Buffer,1410703348915793921,en,,,1412845130818768897,https://buffer.com,213,,,code,code
-"@jfarrell Yes! You can set language-specific editor settings globally: https://t.co/1fvkjTkuIA
-This includes setting ""editor.tabSize""",14274247,1412821871075074048,0,,TweetDeck,,en,1412563693540458496,14274247.0,1412821871075074048,https://about.twitter.com/products/tweetdeck,2,1.4125636935404585e+18,jfarrell,code,code
-"RT @Soham_Asmi: Tired of seeing the same extension mentioned in every VSCode extension thread? 
-
-Here's a list of extensions that I persona…",,1412820977843507204,34,,TweetDeck,,en,,,1412820977843507204,https://about.twitter.com/products/tweetdeck,0,,,code,code
-"RT @clintgibler: 🌎 New @code extension: Remote Repositories
-
-@BrigitMurtaugh and @eamodio describe how it lets you  quickly browse, search,…",,1412475941717217284,22,,Buffer,,en,,,1412475941717217284,https://buffer.com,0,,,code,code
-What is Workspace Trust and why did we have to add it in VS Code? @chrisdias explains how these pop-ups asking if y… https://t.co/XbmDrx4BMe,,1412464287130394629,29,,TweetDeck,,en,,,1412464287130394629,https://about.twitter.com/products/tweetdeck,116,,,code,code
-"RT @TarasNovak: Houston, we have lift off! Here is a basic thml #DataTableView 🈸 for @code #notebooks 📚: https://t.co/AVAC8v24ip
-#dataTools…",,1411372420166995972,25,,Buffer,,en,,,1411372420166995972,https://buffer.com,0,,,code,code
-"RT @mattbierner: Today's @code extension: https://t.co/aYHpTVTnFt Integration
-
-View and edit https://t.co/aYHpTVTnFt diagrams directly in V…",,1411124902984257537,185,,TweetDeck,,en,,,1411124902984257537,https://about.twitter.com/products/tweetdeck,0,,,code,code
-"RT @chrisraygill: Hi VS @code friends 👋
-
-I made an issue with the proposal for verifying extension publisher domains:
-
-https://t.co/Ez51oXQ…",,1410986658355425281,10,1.40232974448239e+18,Twitter Web App,1402329744482390016,en,,,1410986658355425281,https://mobile.twitter.com,0,,,code,code
-@xcolbyg can you file an issue? https://t.co/zQra0rLgYx cc @Tyriar,912416404426633221,1410684377399443457,0,,TweetDeck,,en,1410251889216835584,9.124164044266332e+17,1410684377399443457,https://about.twitter.com/products/tweetdeck,1,1.4102518892168356e+18,xcolbyg,code,code
-"@ryanguill yup! turn on the ""files.hotExit"" setting",11752902,1410683749948403713,6,,Twitter Web App,,en,1410607117275308042,11752902.0,1410683749948403713,https://mobile.twitter.com,37,1.410607117275308e+18,ryanguill,code,code
-"RT @sarah_edo: 🎇🏹🐔
-
-I'm excited to announce... probably the most ridiculous nonsense I've ever open sourced:
-
-A Fortnite VS Code Theme!
-
-It…",,1410357985981960200,360,,Buffer,,en,,,1410357985981960200,https://buffer.com,0,,,code,code
-New free resources to explore Machine Learning… With VS Code and Jupyter Notebooks 📗 https://t.co/e9S07Q6Omy,,1410292113359704066,28,1.4102517893586944e+18,Buffer,1410251789358694401,en,,,1410292113359704066,https://buffer.com,99,,,code,code
-@Stone_Ranger @TylerLeonhardt @LearnTV Here it is: https://t.co/dERJhAlAKO,245029223,1410270532734361600,0,1.409932287404241e+18,TweetDeck,1409932287404240898,en,1410177165354835968,245029223.0,1410270532734361600,https://about.twitter.com/products/tweetdeck,1,1.410177165354836e+18,Stone_Ranger,code,code
-"RT @TylerLeonhardt: 👋 hello friends
-
-Let me know if you have any questions about @code and about authoring VS Code extensions! I'm here to…",,1410263612317392899,30,,Buffer,,en,,,1410263612317392899,https://buffer.com,0,,,code,code
-RT @github: Meet GitHub Copilot - your AI pair programmer. https://t.co/eWPueAXTFt https://t.co/NPua5K2vFS,,1409900970788667394,9035,,Buffer,,en,,,1409900970788667394,https://buffer.com,0,,,code,code
-10 mins till @TylerLeonhardt begins his live coding stream on @LearnTV ‼️ Come and learn how to build your first VS… https://t.co/LW5LVteZOv,,1409894440349667329,12,,Buffer,,en,,,1409894440349667329,https://buffer.com,55,,,code,code
-"RT @devdevcharlie: It's still Pride month and I spent some time making Pride-inspired VSCode themes! 🏳️‍🌈🏳️‍⚧️
-Some flags' colour combinati…",,1409577339869184001,123,,Buffer,,en,,,1409577339869184001,https://buffer.com,0,,,code,code
-"RT @smashingmag: In today’s article, @mmatuzo shares which custom Emmet snippets he personally uses in VS Code:
-https://t.co/AmOCyWrdTu
-
-Q:…",,1409557409832472577,10,,TweetDeck,,en,,,1409557409832472577,https://about.twitter.com/products/tweetdeck,0,,,code,code
-"Want to learn how to create your own VS Code extension? 🧑‍💻 In our next livestream, @TylerLeonhardt will be coding… https://t.co/RJkOCtv6Zh",,1408845776067903503,62,,Sprout Social,,en,,,1408845776067903503,https://sproutsocial.com,234,,,code,code
+in_reply_to_user_id_str,in_reply_to_status_id_str,quoted_status_id_str,in_reply_to_status_id,id,source,lang,id_str,source_url,retweet_count,quoted_status_id,in_reply_to_screen_name,in_reply_to_user_id,text,favorite_count,user,author
+2187166623,1413236411302563841,,1.4132364113025638e+18,1413236465635573760,Twitter for iPhone,en,1413236465635573760,http://twitter.com/download/iphone,0,,CarterDerrell,2187166623.0,@CarterDerrell Well 👀👀👀,0,SlyKimba,SlyKimba
+2187166623,1413235754386534401,,1.4132357543865344e+18,1413236248668516355,Twitter for iPhone,und,1413236248668516355,http://twitter.com/download/iphone,0,,CarterDerrell,2187166623.0,@CarterDerrell 👀,0,SlyKimba,SlyKimba
+2187166623,1413229420387700745,,1.4132294203877007e+18,1413235637680025607,Twitter for iPhone,en,1413235637680025607,http://twitter.com/download/iphone,0,,CarterDerrell,2187166623.0,@CarterDerrell This is Alice before she pulls out her claws.,2,SlyKimba,SlyKimba
+359067286,1413135561787772940,,1.413135561787773e+18,1413202337301254149,Twitter for iPhone,en,1413202337301254149,http://twitter.com/download/iphone,0,,EvanSoul_ita,359067286.0,@EvanSoul_ita Congrats playa! Nothing but blessings for you and the fam!! ✨,0,SlyKimba,SlyKimba
+,,,,1413189943397126150,Twitter for iPhone,en,1413189943397126150,http://twitter.com/download/iphone,0,,,,Been completely struggling today but at least the lack of sleep was worth it this go around.,0,SlyKimba,SlyKimba
+,,1413108729009119239,,1413166489222459392,Twitter for iPhone,en,1413166489222459392,http://twitter.com/download/iphone,0,1.4131087290091192e+18,,,Lets goooooo 🗣🗣🗣 https://t.co/19IIRkkLrE,0,SlyKimba,SlyKimba
+,,,,1412965754656501762,Twitter for iPhone,en,1412965754656501762,http://twitter.com/download/iphone,19,,,,RT @iGetCurved_: The “WHAT ARE THOSEEE” era was a sick and twisted time,0,SlyKimba,SlyKimba
+,,,,1412946753142378498,Twitter for iPhone,en,1412946753142378498,http://twitter.com/download/iphone,9319,,,,RT @TobysWurld: @ someone you proud of today &lt;3 https://t.co/vy3Ak3wAKf,0,SlyKimba,SlyKimba
+,,,,1412940205351489539,Twitter for iPhone,en,1412940205351489539,http://twitter.com/download/iphone,160,,,,RT @VGFGamers: some of y’all 😂 https://t.co/ouVuZsiQk4,0,SlyKimba,SlyKimba
+1066127834454863873,1412934155021819905,,1.41293415502182e+18,1412934716538372099,Twitter for iPhone,und,1412934716538372099,http://twitter.com/download/iphone,0,,Kel_Kels_,1.0661278344548639e+18,@Kel_Kels_ https://t.co/Oe5BFECQXS,0,SlyKimba,SlyKimba
+468016984,1412929793771851782,,1.4129297937718518e+18,1412934545951924228,Twitter for iPhone,en,1412934545951924228,http://twitter.com/download/iphone,0,,TajerahAngel,468016984.0,@TajerahAngel You just wanna see someone in pain 😂,0,SlyKimba,SlyKimba
+1066127834454863873,1412933453197230080,,1.41293345319723e+18,1412933998586875904,Twitter for iPhone,en,1412933998586875904,http://twitter.com/download/iphone,0,,Kel_Kels_,1.0661278344548639e+18,@Kel_Kels_ Interpret this however you want. https://t.co/4tQ7K002Hh,0,SlyKimba,SlyKimba
+1066127834454863873,1412929531753553924,,1.412929531753554e+18,1412929723248914432,Twitter for iPhone,en,1412929723248914432,http://twitter.com/download/iphone,0,,Kel_Kels_,1.0661278344548639e+18,"@Kel_Kels_ @Dexsavy First of all, don’t make me get started on you 💀",0,SlyKimba,SlyKimba
+1066127834454863873,1412929081029562374,,1.4129290810295624e+18,1412929389126471682,Twitter for iPhone,en,1412929389126471682,http://twitter.com/download/iphone,0,,Kel_Kels_,1.0661278344548639e+18,@Kel_Kels_ @Dexsavy Absolutely not 💀 I play Dokkan Battle lmao,0,SlyKimba,SlyKimba
+40886612,1412927787019784192,,1.4129277870197842e+18,1412929249749655557,Twitter for iPhone,en,1412929249749655557,http://twitter.com/download/iphone,0,,kno_nuffin,40886612.0,"@kno_nuffin Naw, you gotta palm that joint 😂😂",1,SlyKimba,SlyKimba
+468016984,1412926612975374337,,1.4129266129753743e+18,1412929175648882688,Twitter for iPhone,en,1412929175648882688,http://twitter.com/download/iphone,0,,TajerahAngel,468016984.0,@TajerahAngel Yes 😂 and they ended up bursting.,0,SlyKimba,SlyKimba
+4868022473,1412913156473622533,,1.4129131564736225e+18,1412928933721432065,Twitter for iPhone,en,1412928933721432065,http://twitter.com/download/iphone,0,,SK_Meech,4868022473.0,@SK_Meech I support this energy Twin 😂,1,SlyKimba,SlyKimba
+,,,,1412928865102614533,Twitter for iPhone,en,1412928865102614533,http://twitter.com/download/iphone,1,,,,RT @SK_Meech: Some of y’all really be fucking wit some lames yo 😭😂 like It’s funny but then again it’s sad,0,SlyKimba,SlyKimba
+4389347597,1412927102417055744,,1.4129271024170557e+18,1412928797360496644,Twitter for iPhone,en,1412928797360496644,http://twitter.com/download/iphone,0,,Dexsavy,4389347597.0,@Dexsavy It’s the fact that he double gripped that hoe 😂😂😂,0,SlyKimba,SlyKimba
+,,,,1412928670197587968,Twitter for iPhone,en,1412928670197587968,http://twitter.com/download/iphone,36728,,,,RT @Okomo_xi: Nearly had a heart attack. https://t.co/TjDoQ6a0oU,0,SlyKimba,SlyKimba
