@@ -318,11 +318,17 @@ df_saved_file.sort_values(by="Date", ascending=False).head(20)
 # In[32]:
 
 
+print(df_saved_file.head(30))
+
+
+# In[33]:
+
+
 # CH: I _think_ you want the top tweet for each of your 5 Users in df_saved_file with "top" being the newest tweet(?)
 # My strategy would be to have your user input a list of requested users first and then process that list
 
 
-# In[33]:
+# In[34]:
 
 
 # which users do we have in the df? Only those are valid input names.
@@ -331,7 +337,7 @@ print(type(unique_users))
 print(unique_users) # you can use it like a list of strings
 
 
-# In[34]:
+# In[35]:
 
 
 requested_users_list = [] # will contains valid(!) user names that your users want's to work with later
@@ -350,8 +356,25 @@ while True:
 print("User name selection finished:",  requested_users_list)
 
 
-# In[35]:
+# In[36]:
 
+
+requested_users_list = ['@socialmedia2day', '@GoogleAds', '@Instagram', '@Facebook', '@Twitter']
+
+
+# In[37]:
+
+
+# How many tweets for each user?
+for n in requested_users_list:
+    df_for_user = df_saved_file[df_saved_file["User"] == n]   
+    print(n, "has", len(df_for_user), "tweets")
+
+
+# In[38]:
+
+
+# Not needed?
 
 tweet_list = []
 # Pull out the newest tweet for a name and store in list
@@ -371,7 +394,7 @@ for n in requested_users_list:
     tweet_list.append(latest_tweet)
 
 
-# In[36]:
+# In[39]:
 
 
 # make a new df by glueing together the dataframes contained in the list
@@ -385,29 +408,67 @@ print(df_top5tweets.head())
 df5 = df_top5tweets
 
 
-# In[37]:
+# CH portion stopped
 
-
-#CH portion stopped
-
-
-# In[38]:
+# In[40]:
 
 
 df_saved_file = pd.read_csv('tweetsentimentanalysis.csv')
 df_saved_file
 
 
-# In[39]:
+# In[41]:
 
 
-get_ipython().system('pip install VaderSentiment')
+#!pip install VaderSentiment
 
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 analyzer = SentimentIntensityAnalyzer()
 
 
-# In[40]:
+# In[42]:
+
+
+import pandas as pd
+df = pd.read_csv('tweetsentimentanalysis.csv')
+print(df.head())
+
+
+# In[43]:
+
+
+# which users do we have in the df? Only those are valid input names.
+unique_users = df_saved_file["User"].unique() # will create a numpy array with all user names in your df
+print("Available users", unique_users) # you can use it like a list of strings
+
+
+# In[44]:
+
+
+requested_users_list = [] # will contains valid(!) user names that your users want's to work with later
+print("Input the user names you want to work with (up to 5)")
+while len(requested_users_list) < 6:
+    print("Valid user names:", unique_users)
+    print("Currently requested user names", requested_users_list)
+    name = input("Enter name from valid user list or Enter to finish")
+    if name == "": break  # enter key, quit loop
+    if name not in unique_users:
+        print("Invalid user, try again")
+        continue
+
+    requested_users_list.append(name)
+    
+print("User name selection finished:",  requested_users_list)
+
+
+# In[45]:
+
+
+# CHEAT
+requested_users_list = ['@socialmedia2day', '@GoogleAds', '@Instagram', '@Facebook', '@Twitter']
+
+
+# In[46]:
 
 
 scores = []
@@ -430,17 +491,24 @@ for i in range(df['text'].shape[0]):
                   })
 
 
-# In[41]:
+# In[47]:
 
 
 sentiments_score = pd.DataFrame.from_dict(scores)
 df = df.join(sentiments_score)
-df.head()
+df.head(20)
 
 
-# In[42]:
+# In[48]:
 
 
+# print out min-mean-max for each sentiment for each user
+
+
+# In[49]:
+
+
+import re
 #collects the compound positive hashtags from the tweets data
 HT_positive = []
 def hashtag_extract(x):
@@ -458,22 +526,23 @@ HT_positive = sum(HT_positive,[])
 HT_positive
 
 
-# In[43]:
+# In[50]:
 
 
+import numpy as np
 #Collect the compound values for each news source
 score_table = df.pivot_table(index='User',  values="Compound", aggfunc = np.mean)
 score_table
 
 
-# In[44]:
+# In[51]:
 
 
 #plotting 
 score_table.plot(kind='bar')
 
 
-# In[45]:
+# In[52]:
 
 
 #Collect the compound values for each news source
@@ -481,7 +550,7 @@ score_table = df.pivot_table(index='User',  values="Positive", aggfunc = np.mean
 score_table
 
 
-# In[46]:
+# In[53]:
 
 
 #Collect the negative values for each news source
@@ -490,7 +559,7 @@ pos_score_table
 pos_score_table.plot(kind='bar')
 
 
-# In[47]:
+# In[54]:
 
 
 #Collect the compound values for each news source
@@ -498,7 +567,7 @@ score_table = df.pivot_table(index='User',  values="Negative", aggfunc = np.mean
 score_table
 
 
-# In[48]:
+# In[55]:
 
 
 #Collect the negative values for each news source
@@ -507,7 +576,7 @@ neg_score_table
 neg_score_table.plot(kind='bar')
 
 
-# In[49]:
+# In[56]:
 
 
 #Collect the negative values for each news source
@@ -515,7 +584,7 @@ neg_score_table = df.pivot_table(index='User',  values="Negative", aggfunc = np.
 neg_score_table
 
 
-# In[50]:
+# In[57]:
 
 
 from collections import Counter
