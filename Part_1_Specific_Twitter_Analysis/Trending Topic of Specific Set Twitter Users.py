@@ -13,16 +13,12 @@ import re
 import sys,csv
 
 
+# This code to find out the trending topic on Twitter. Purpose of use for market research. 
+# This satisfies the statistical data for markters, as they are the stakeholders of this project
+# referenced from https://python.plainenglish.io/twitter-sentiment-analysis-using-vader-tweepy-b2a62fba151e
+# adjusted by changing variables names and accounts to compare statistical data of
+
 # In[2]:
-
-
-#This code to find out the trending topic on Twitter. Purpose of use for market research. 
-#This satisfies the statistical data for markters, as they are the stakeholders of this project
-#referenced from https://python.plainenglish.io/twitter-sentiment-analysis-using-vader-tweepy-b2a62fba151e
-#adjusted by changing variables names and accounts to compare statistical data of
-
-
-# In[3]:
 
 
 consumer_key = "jzn0NU9EviCRRbONbUXX9a8VN"
@@ -38,14 +34,15 @@ def initialize():
 api = initialize()
 
 
-# In[4]:
+# # Trending Topic Analysis of Specified Twitter Accounts
+
+# The purpose of the selceted accounts is for the stakeholders (marketers) to comb through the accounts and analysis data of the tweets for use of targeting an audience of their choice, based on the results displayed through the tweetsentimentanalysis.csv. 
+
+# In[3]:
 
 
+#Specified list of twitter accounts to search through of data collected
 comp_searches = ("@socialmedia2day", "@GoogleAds", "@Instagram", "@Facebook", "@Twitter")
-
-
-# In[5]:
-
 
 # Array to hold sentiment
 sentiments = []
@@ -69,28 +66,12 @@ for search in comp_searches:
                         })
 
 
-# In[6]:
+# In[4]:
 
 
 #convert array to dataframe
 df = pd.DataFrame.from_dict(sentiments)
 df.head(1002)#limit is 1000 rows
-
-
-# In[7]:
-
-
-df.to_csv('tweetsentimentanalysis.csv', index=False)
-
-
-# In[8]:
-
-
-#CH portion incorporated
-
-
-# In[9]:
-
 
 import pandas as pd
 df_saved_file = pd.read_csv('tweetsentimentanalysis.csv')
@@ -102,38 +83,10 @@ df_saved_file['Date'] = pd.to_datetime(df_saved_file['Date'])
 print(df_saved_file.head())
 df_saved_file['Date'].dtype # just proof that Date is now of a special datetime type
 
-
-# In[10]:
-
-
-# Quick test to see if sorting by data (new to old) works
-df_saved_file.sort_values(by="Date", ascending=False).head(20)
-
-
-# In[11]:
-
-
-print(df_saved_file.head(30))
-
-
-# In[12]:
-
-
-# CH: I _think_ you want the top tweet for each of your 5 Users in df_saved_file with "top" being the newest tweet(?)
-# My strategy would be to have your user input a list of requested users first and then process that list
-
-
-# In[13]:
-
-
 # which users do we have in the df? Only those are valid input names.
 unique_users = df_saved_file["User"].unique() # will create a numpy array with all user names in your df
 print(type(unique_users))
 print(unique_users) # you can use it like a list of strings
-
-
-# In[14]:
-
 
 requested_users_list = [] # will contains valid(!) user names that your users want's to work with later
 print("Input the user names you want to work with")
@@ -147,30 +100,15 @@ while True:
         continue
 
     requested_users_list.append(name)
-    
+ 
+requested_users_list = ['@socialmedia2day', '@GoogleAds', '@Instagram', '@Facebook', '@Twitter'] 
+
 print("User name selection finished:",  requested_users_list)
-
-
-# In[15]:
-
-
-requested_users_list = ['@socialmedia2day', '@GoogleAds', '@Instagram', '@Facebook', '@Twitter']
-
-
-# In[16]:
-
-
 #How many tweets for each user?
 for n in requested_users_list:
     df_for_user = df_saved_file[df_saved_file["User"] == n]   
     print(n, "has", len(df_for_user), "tweets")
-
-
-# In[17]:
-
-
-# Not needed?
-
+    
 tweet_list = []
 # Pull out the newest tweet for a name and store in list
 for n in requested_users_list:
@@ -188,10 +126,7 @@ for n in requested_users_list:
     latest_tweet = df_sorted.loc[0:0]  # or loc[0:2] for the 3 newest tweets, etc.
     tweet_list.append(latest_tweet)
 
-
-# In[18]:
-
-
+    
 # make a new df by glueing together the dataframes contained in the list
 # this would also work if you had pull out more than the 0 newest row
 df_top5tweets = pd.concat(tweet_list,   
@@ -202,67 +137,57 @@ print(df_top5tweets.head())
 # You seem to later call this df ....
 df5 = df_top5tweets
 
+#converts data frame into csv file data
+df.to_csv('tweetsentimentanalysis.csv', index=False)
 
-# CH portion stopped
 
-# In[19]:
+# Converts data frame(df) into csv file of the list of set users ('@socialmedia2day', '@GoogleAds', '@Instagram', '@Facebook', '@Twitter')
+# and lists 200 of the most recent tweets when the code is run.
+
+# In[5]:
 
 
 df_saved_file = pd.read_csv('tweetsentimentanalysis.csv')
 df_saved_file
 
 
-# In[20]:
-
-
-#!pip install VaderSentiment
-from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-analyzer = SentimentIntensityAnalyzer()
-
-
-# In[21]:
+# In[6]:
 
 
 import pandas as pd
 df = pd.read_csv('tweetsentimentanalysis.csv')
 print(df.head())
 
-
-# In[22]:
-
-
-# which users do we have in the df? Only those are valid input names.
 unique_users = df_saved_file["User"].unique() # will create a numpy array with all user names in your df
 print("Available users", unique_users) # you can use it like a list of strings
 
 
-# In[23]:
+# # Twitter Sentiment Analysis - Polarity Score of Hashtags
+
+# ### About the scroing: 
+
+# The compound score is computed by summing the valence scores of each word in the lexicon, adjusted according to the rules, and then normalized to be between -1 (most extreme negative) and +1 (most extreme positive). This is the most useful metric if you want a single unidimensional measure of sentiment for a given sentence. Calling it a 'normalized, weighted composite score' is accurate.
+# 
+# It is also useful for researchers who would like to set standardized thresholds for classifying sentences as either positive, neutral, or negative. Typical threshold values (used in the literature cited on this page) are:
+# 
+# positive sentiment: compound score >= 0.05
+# neutral sentiment: (compound score > -0.05) and (compound score < 0.05)
+# negative sentiment: compound score <= -0.05
+# NOTE: The compound score is the one most commonly used for sentiment analysis by most researchers, including the authors.
+# 
+# The pos, neu, and neg scores are ratios for proportions of text that fall in each category (so these should all add up to be 1... or close to it with float operation). These are the most useful metrics if you want to analyze the context & presentation of how sentiment is conveyed or embedded in rhetoric for a given sentence. For example, different writing styles may embed strongly positive or negative sentiment within varying proportions of neutral text -- i.e., some writing styles may reflect a penchant for strongly flavored rhetoric, whereas other styles may use a great deal of neutral text while still conveying a similar overall (compound) sentiment. As another example: researchers analyzing information presentation in journalistic or editorical news might desire to establish whether the proportions of text (associated with a topic or named entity, for example) are balanced with similar amounts of positively and negatively framed text versus being "biased" towards one polarity or the other for the topic/entity.
+# IMPORTANTLY: these proportions represent the "raw categorization" of each lexical item (e.g., words, emoticons/emojis, or initialisms) into positve, negative, or neutral classes; they do not account for the VADER rule-based enhancements such as word-order sensitivity for sentiment-laden multi-word phrases, degree modifiers, word-shape amplifiers, punctuation amplifiers, negation polarity switches, or contrastive conjunction sensitivity.
+
+# !pip install VaderSentiment packaged needed to install to run sentiment analysis below 
+
+# In[7]:
 
 
-requested_users_list = [] # will contains valid(!) user names that your users want's to work with later
-print("Input the user names you want to work with (up to 5)")
-while len(requested_users_list) < 6:
-    print("Valid user names:", unique_users)
-    print("Currently requested user names", requested_users_list)
-    name = input("Enter name from valid user list or Enter to finish")
-    if name == "": break  # enter key, quit loop
-    if name not in unique_users:
-        print("Invalid user, try again")
-        continue
-
-    requested_users_list.append(name)
-    
-print("User name selection finished:",  requested_users_list)
+from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+analyzer = SentimentIntensityAnalyzer()
 
 
-# In[24]:
-
-
-# CHEAT
-requested_users_list = ['@socialmedia2day', '@GoogleAds', '@Instagram', '@Facebook', '@Twitter']
-
-
-# In[25]:
+# In[8]:
 
 
 scores = []
@@ -285,21 +210,17 @@ for i in range(df['text'].shape[0]):
                   })
 
 
-# In[26]:
+# In[9]:
 
 
 sentiments_score = pd.DataFrame.from_dict(scores)
 df = df.join(sentiments_score)
-df.head(20)
+df.head(1000)
 
 
-# In[27]:
+# Lists the most frequently used hashtags between the accounts 
 
-
-# print out min-mean-max for each sentiment for each user
-
-
-# In[28]:
+# In[10]:
 
 
 import re
@@ -320,7 +241,7 @@ HT_positive = sum(HT_positive,[])
 HT_positive
 
 
-# In[29]:
+# In[11]:
 
 
 import numpy as np
@@ -329,31 +250,31 @@ score_table = df.pivot_table(index='User',  values="Compound", aggfunc = np.mean
 score_table
 
 
-# In[30]:
+# In[12]:
 
 
 #plotting 
 score_table.plot(kind='bar')
 
 
-# In[31]:
+# In[13]:
 
 
-#Collect the compound values for each news source
+#Collect the positive values for each news source
 score_table = df.pivot_table(index='User',  values="Positive", aggfunc = np.mean)
 score_table
 
 
-# In[32]:
+# In[14]:
 
 
-#Collect the negative values for each news source
+#Collect the positive values for each news source
 pos_score_table = df.pivot_table(index='User',  values="Positive", aggfunc = np.mean)
 pos_score_table
 pos_score_table.plot(kind='bar')
 
 
-# In[33]:
+# In[15]:
 
 
 #Collect the compound values for each news source
@@ -361,7 +282,7 @@ score_table = df.pivot_table(index='User',  values="Negative", aggfunc = np.mean
 score_table
 
 
-# In[34]:
+# In[16]:
 
 
 #Collect the negative values for each news source
@@ -370,22 +291,10 @@ neg_score_table
 neg_score_table.plot(kind='bar')
 
 
-# In[35]:
+# In[17]:
 
 
 #Collect the negative values for each news source
 neg_score_table = df.pivot_table(index='User',  values="Negative", aggfunc = np.mean)
 neg_score_table
-
-
-# In[36]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
