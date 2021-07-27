@@ -36,3 +36,4 @@ Links
 - [Documentation](https://tweepy.readthedocs.io/en/latest/)
 - [Twitter API Documentation](https://developer.twitter.com/en/docs/twitter-api)
 
+![tweepy giphy gif](https://github.com/isaacm13/Twitter-Project/blob/main/tweepy-giphy.gif)
