@@ -1,0 +1,25 @@
+Packages to be installed using import or !pip install [module] to be able run code/files
+
+import tweepy 
+from tweepy import OAuthHandler
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import time
+import re
+import sys,csv
+import webbrowser
+import datetime 
+import json
+from tweepy import API 
+from tweepy import Cursor
+from tweepy.streaming import StreamListener
+from tweepy import Stream
+import os
+import nltk
+import pycountry
+import string
+import wordcloud 
+!pip install wordcloud-1.8.1-cp39-cp39-win_amd64.whl https://www.lfd.uci.edu/~gohlke/pythonlibs/#wordcloud 
+import stopwords
+
