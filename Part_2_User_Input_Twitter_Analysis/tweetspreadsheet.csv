@@ -1,35 +1,33 @@
-in_reply_to_user_id,in_reply_to_status_id_str,in_reply_to_status_id,favorite_count,retweet_count,lang,in_reply_to_screen_name,source,id_str,quoted_status_id,source_url,text,quoted_status_id_str,in_reply_to_user_id_str,id,user,author
-,,,0,102,en,,Twitter Web App,1418337589036212224,,https://mobile.twitter.com,"RT @_AndreaMah_: Check out @code's new web previewer, Live Preview! 💻👀Preview your changes within the editor or in an external window and s…",,,1418337589036212224,code,code
-,,,0,51,en,,Buffer,1418236398918852612,,https://buffer.com,"RT @pythonvscode: 📢 The July release of the #Python extension for VS @code is out! Here's what's new:
+source_url,in_reply_to_user_id,in_reply_to_status_id_str,in_reply_to_user_id_str,quoted_status_id_str,lang,source,quoted_status_id,in_reply_to_screen_name,retweet_count,in_reply_to_status_id,favorite_count,id_str,text,id,user,author
+https://buffer.com,,,,1421095510056869888,en,Buffer,1.42109551005687e+18,,25,,0,1422316531719999489,"RT @nthonyChu: On this week’s Azure Friday, I joined @shanselman to talk about Azure Static Web Apps
 
-- Quick fix for configuring project…",,,1418236398918852612,code,code
-,,,100,40,en,,Buffer,1418221814757486614,,https://buffer.com,Come learn about @Prisma in 10 minutes! We're going live with @carmen_berndt and @ruheni_alex to talk about this… https://t.co/nZWlO73viA,,,1418221814757486614,code,code
-,,,0,10,en,,Buffer,1417918551797739527,,https://buffer.com,"RT @mattbierner: Today's @code tip: Import statement completions
+🚀 Deploy a React app to @AzureStaticA…",1422316531719999489,code,code
+https://about.twitter.com/products/tweetdeck,26228734.0,1421988301829939200,26228734,,en,TweetDeck,,magnetikonline,0,1.4219883018299392e+18,8,1422308848220704772,@magnetikonline Been around for a while :) but it's a great feature! https://t.co/ZyVQ4NjLvC,1422308848220704772,code,code
+https://mobile.twitter.com,,,,,en,Twitter Web App,,,5,,0,1422308413736988672,"RT @ospfranco: On @code you can conditionally break when debugging code, super useful if you have code that runs hundreds of times and fail…",1422308413736988672,code,code
+https://about.twitter.com/products/tweetdeck,,,,,en,TweetDeck,,,34,,0,1422298987328114694,"RT @codeSTACKr: vs @code has browser dev tools, console, and built-in #javascript debugging!! 🤯 https://t.co/WT1KLoloyr",1422298987328114694,code,code
+https://buffer.com,,,,,en,Buffer,,,10,,55,1422267135733161987,On Thursday's VS Code livestream we're talking with @damovisa about using @GitHub with @Code 📺 Whether you're a beg… https://t.co/uHtaealPBo,1422267135733161987,code,code
+https://buffer.com,,,,,en,Buffer,,,3,,0,1422242417017860100,"RT @mattstratton: If you missed me as a guest on the @code stream earlier today with @burkeholland, you can check it out here! https://t.co…",1422242417017860100,code,code
+https://about.twitter.com/products/tweetdeck,,,,,en,TweetDeck,,,7,,0,1420766812443222017,"RT @hubacekjirka: Thanks @code for the tips! Love the @gitlens tooltips when connected to GitHub.
 
-Write 'import' followed by the symbol you want to import and VS Code will…",,,1417918551797739527,code,code
-,,,0,28,en,,Buffer,1417873758300385282,,https://buffer.com,RT @codepo8: If you're a user of the Chrome or Edge Debugger extensions for @code you can now safely uninstall them - JavaScript debugging…,,,1417873758300385282,code,code
-,,,0,27,en,,Buffer,1417607254094893060,,https://buffer.com,RT @pythonvscode: Have you signed up for @europython yet?? You won't want to miss learning to build and deploy #PyTorch models using @Azure…,,,1417607254094893060,code,code
-,,,74,7,en,,TweetDeck,1417559267637284865,,https://about.twitter.com/products/tweetdeck,Learn about debugging JS apps with VS Code and how to use @MSEdgeDev DevTools directly from the editor 🐞 The record… https://t.co/A4cMDTUREb,,,1417559267637284865,code,code
-,,,0,36,en,,TweetDeck,1417237638268915716,,https://about.twitter.com/products/tweetdeck,RT @TylerLeonhardt: 🚀 In @code insiders today... the initial support for ✨ automatic language detection of untitled files ✨ powered by @yoe…,,,1417237638268915716,code,code
-,,,50,6,en,,Buffer,1417202585174413315,1.4164458574995825e+18,https://buffer.com,"🔟 We're going live in 10 minutes! Tune in at 12.30pm PT for this livestream.
-👉 https://t.co/iPWBnPU2BC https://t.co/jciwqTwDpJ",1416445857499582467,,1417202585174413315,code,code
-,,,188,21,en,,Buffer,1416827867481190400,1.4110067613273702e+18,https://buffer.com,Learn to build web apps with @vuejs and @code 👇 https://t.co/x1RM43ZlYm,1411006761327370240,,1416827867481190400,code,code
-,,,119,17,en,,Buffer,1416445857499582467,,https://buffer.com,(New date 🗓) Learn about debugging frontend web apps in VS Code using the @MSEdgeDev's DevTools extension for VS Co… https://t.co/CWZKIGmrvd,,,1416445857499582467,code,code
-,,,229,55,en,,Buffer,1416146627409195011,1.4160726420088586e+18,https://buffer.com,Using VS Code and #WSL on Windows? Here are some best practices to set up your coding environment! https://t.co/nO99HeIFIj,1416072642008858629,,1416146627409195011,code,code
-,,,0,29,en,,Twitter Web App,1416117548936953857,,https://mobile.twitter.com,RT @stuartleeks: Want to be able to open a folder directly into a dev container with @code? The latest release on the insiders channel intr…,,,1416117548936953857,code,code
-,,,934,148,en,,Buffer,1416102091945349124,,https://buffer.com,"A VS Code theme for all the times that you wished you could have been spending more time in @MSExcel…
-👉… https://t.co/jElDDws05T",,,1416102091945349124,code,code
-,,,0,42,en,,Buffer,1416063074050715651,,https://buffer.com,"RT @mattbierner: Today's @code tip: terminal editors
+https://t.co/Z4mdbHOG5H https://t.co/QSY…",1420766812443222017,code,code
+https://buffer.com,,,,,en,Buffer,,,9,,55,1420396138176389121,We're about to go live with @mattstratton for another VS Code livestream! Join us at 8am Pacific Time (that's in 🔟… https://t.co/Iss6oc4OhH,1420396138176389121,code,code
+https://mobile.twitter.com,,,,,en,Twitter Web App,,,22,,0,1420153422175670274,"RT @LearnTV: It's not too late to save the date!
+This Thursday, July 29th it's #dotnetConf: Focus on F#! 
 
-Drag and drop to move terminals into editor tabs. Terminal editors behave like normal…",,,1416063074050715651,code,code
-1174791.0,1415819329791201281,1.4158193297912013e+18,1,0,en,StevenJV,TweetDeck,1415822998167121921,,https://about.twitter.com/products/tweetdeck,@StevenJV @pharriseeLoop @csharpfritz We have a hex editor extension! https://t.co/1ebSr3Tp8O,,1174791,1415822998167121921,code,code
-,,,0,28,en,,Buffer,1415794555757203458,,https://buffer.com,"RT @MrConerMurphy: Want to be more efficient in coding in VSCode? Then you need to master Emmet.
+Hear from #fsharp creator @dsyme…",1420153422175670274,code,code
+https://buffer.com,,,,1418642575838359552,en,Buffer,1.4186425758383596e+18,,21,,127,1419724263720984576,"Here's another cool VS Code custom notebook extension you should check out 👀
+Link 🔗 https://t.co/b69UjECKWV https://t.co/BRHly3CPEs",1419724263720984576,code,code
+https://buffer.com,,,,,en,Buffer,,,18,,73,1419364644427284482,"📺 This Wednesday, @mattstratton is joining us for a livestream on Infrastructure-as-Code with @PulumiCorp, writing… https://t.co/VKMxxhbzLk",1419364644427284482,code,code
+https://buffer.com,,,,1415707959259062273,en,Buffer,1.4157079592590623e+18,,36,,233,1418982561699835904,"Django is a Python framework for building web apps, and now you can learn how to use it with @Code and… https://t.co/OyahKjuPqr",1418982561699835904,code,code
+https://about.twitter.com/products/tweetdeck,3167734591.0,1418661889027022848,3167734591,,en,TweetDeck,,code,5,1.4186618890270228e+18,67,1418662050063081472,"We see this theme, we hear in our heads: https://t.co/boCHCFZWzq",1418662050063081472,code,code
+https://buffer.com,,,,1418593761815416836,en,Buffer,1.4185937618154168e+18,,56,,360,1418661889027022848,BLISS-ful https://t.co/LSMhzl7amD,1418661889027022848,code,code
+https://buffer.com,,,,,en,Buffer,,,49,,0,1418647236318310405,"RT @anthonypjshaw: I gave a talk this week ""Visual Studio Code for Python Developers"" -- check out the recording. Learn something new about…",1418647236318310405,code,code
+https://mobile.twitter.com,,,,,en,Twitter Web App,,,125,,0,1418337589036212224,"RT @_AndreaMah_: Check out @code's new web previewer, Live Preview! 💻👀Preview your changes within the editor or in an external window and s…",1418337589036212224,code,code
+https://buffer.com,,,,,en,Buffer,,,73,,0,1418236398918852612,"RT @pythonvscode: 📢 The July release of the #Python extension for VS @code is out! Here's what's new:
 
-Here are 3 Emmet shortcuts I use to make…",,,1415794555757203458,code,code
-,,,0,18,en,,Buffer,1415736682452762626,,https://buffer.com,RT @MSFTEnable: Visual Studio Code has multiple features to make the editor accessible to all users — zoom and high contrast colors improve…,,,1415736682452762626,code,code
-,,,46,2,en,,Twitter Web App,1415696040053907464,1.4150239894754877e+18,https://mobile.twitter.com,Sorry folks! We had some technical issues behind-the-scenes with the livestream today 😬 🎬 We will reschedule this s… https://t.co/eZ202OZWpQ,1415023989475487757,,1415696040053907464,code,code
-,,,0,45,en,,Buffer,1415431413483155463,,https://buffer.com,"RT @mattbierner: Peek at inlay hints in @code 
+- Quick fix for configuring project…",1418236398918852612,code,code
+https://buffer.com,,,,,en,Buffer,,,75,,111,1418221814757486614,Come learn about @Prisma in 10 minutes! We're going live with @carmen_berndt and @ruheni_alex to talk about this… https://t.co/nZWlO73viA,1418221814757486614,code,code
+https://buffer.com,,,,,en,Buffer,,,13,,0,1417918551797739527,"RT @mattbierner: Today's @code tip: Import statement completions
 
-Inlay hints can show parameter names and inferred types in your #JavaScript/#TypeScript
-
-Tr…",,,1415431413483155463,code,code
+Write 'import' followed by the symbol you want to import and VS Code will…",1417918551797739527,code,code
+https://buffer.com,,,,,en,Buffer,,,28,,0,1417873758300385282,RT @codepo8: If you're a user of the Chrome or Edge Debugger extensions for @code you can now safely uninstall them - JavaScript debugging…,1417873758300385282,code,code

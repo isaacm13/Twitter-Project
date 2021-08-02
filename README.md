@@ -1,4 +1,4 @@
-Tweepy: Twitter for Python!
+Web-Scraping: Pulling data from Twitter using API
 ======
 
 [![Test Status](https://github.com/tweepy/tweepy/workflows/Test/badge.svg)](https://github.com/tweepy/tweepy/actions?query=workflow%3ATest)
@@ -6,6 +6,13 @@ Tweepy: Twitter for Python!
 [![PyPI Version](https://img.shields.io/pypi/v/tweepy?label=PyPI)](https://pypi.org/project/tweepy/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/tweepy?label=Python)](https://pypi.org/project/tweepy/)
 [![Coverage Status](https://img.shields.io/coveralls/tweepy/tweepy/master.svg?style=flat)](https://coveralls.io/github/tweepy/tweepy?branch=master)
+
+About:
+This project is about web-scraping in pulling Twitter's data using their API. For the purpose of using the data into statistical analysis for users' descretion of evluating their twitter profile by their twitter user's username, timeline and interactions on the Twitter platform.
+
+This project is composed of jupyter notebooks' to analyze the data pull through Twitter's API and see how each cell works on what piece of data is being pulled and visualized by table, graph to word cloud. The data is created by the attributes of the Twitter's user's name and their tweet (post) on the platform. 
+
+Refer to the installation method below to install the Tweepy module, necessary to pulling Twitter's data by web scraping throught their API. 
 
 Installation
 ------------
