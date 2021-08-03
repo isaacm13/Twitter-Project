@@ -1,6 +1,4 @@
-#Packages to be installed using import or !pip install [module] to be able run code/files
-#To install them, type this into your console:
-#pip - r requirements.txt.
+#Packages to be installed, type this into your console: pip - r requirements.txt.
 
 tweepy
 pandas
