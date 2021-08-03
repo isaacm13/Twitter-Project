@@ -1,10 +1,13 @@
-#Packages to be installed using import or !pip install [module] to be able run code/files
-#To install them, type this into your console:
-#pip - r requirements.txt.
+#Packages to be installed, type this into your console: pip - r requirements.txt.
 
-#tweepy, pandas, numpy, matplolib, nltk, pycountry, wordcloud, stopwords
+tweepy
+pandas
+numpy
+matplolib
+nltk
+pycountry
+stopwords
 
-rich
-dill >=0.3 #must be at least version 0.3 
-
+# if this cannot installed, get the 64 bit binary whl file for your python version from https://www.lfd.uci.edu/~gohlke/pythonlibs/#wordcloud and use pip install <whl file> to install it manually
+wordcloud 
 
