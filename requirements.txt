@@ -10,5 +10,6 @@ nltk
 pycountry
 stopwords
 
-wordcloud # if the cannot installed by pip, get the binary whl file from https://www.lfd.uci.edu/~gohlke/pythonlibs/#wordcloud and use pip install <whl file> to 
+# if this cannot installed, get the 64 bit binary whl file for your python version from https://www.lfd.uci.edu/~gohlke/pythonlibs/#wordcloud and use pip install <whl file> to install it manually
+wordcloud 
 
