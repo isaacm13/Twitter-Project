@@ -1,12 +1,6 @@
 Web-Scraping: Pulling data from Twitter using API
 ======
 
-[![Test Status](https://github.com/tweepy/tweepy/workflows/Test/badge.svg)](https://github.com/tweepy/tweepy/actions?query=workflow%3ATest)
-[![Documentation Status](https://readthedocs.org/projects/tweepy/badge/?version=latest)](https://tweepy.readthedocs.io/en/latest/)
-[![PyPI Version](https://img.shields.io/pypi/v/tweepy?label=PyPI)](https://pypi.org/project/tweepy/)
-[![Python Versions](https://img.shields.io/pypi/pyversions/tweepy?label=Python)](https://pypi.org/project/tweepy/)
-[![Coverage Status](https://img.shields.io/coveralls/tweepy/tweepy/master.svg?style=flat)](https://coveralls.io/github/tweepy/tweepy?branch=master)
-
 About:
 This project is about web-scraping in pulling Twitter's data using their API. For the purpose of using the data into statistical analysis for users' descretion of evluating their twitter profile by their twitter user's username, timeline and interactions on the Twitter platform.
 
@@ -40,7 +34,7 @@ Python 3.6 - 3.9 are supported.
 Links
 -----
 
-- [Documentation](https://tweepy.readthedocs.io/en/latest/)
+- [Tweepy Documentation](https://tweepy.readthedocs.io/en/latest/)
 - [Twitter API Documentation](https://developer.twitter.com/en/docs/twitter-api)
 
 ![tweepy giphy gif](https://github.com/isaacm13/Twitter-Project/blob/main/tweepy-giphy.gif)
