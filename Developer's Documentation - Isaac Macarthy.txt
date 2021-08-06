@@ -45,17 +45,7 @@ For instance, that a favorite_count and retweet_count, which are columns in the 
 As favorite_count is how many likes the tweet has, and retweet_count is how many times the tweet has been shared amongst in the Twitter platform to other users
 
 So, overall is generate a csv file for each file ran, so that data is presented in a spreadsheet for a quick run through of the data pulled, rather than having to sort through each file ran and having to look at each visual of data, whether it be a table to graph.
-<<<<<<< HEAD
 The csv file would have all the data from a table or graph all in one clear view by it being a spreadsheet.
-=======
-? The csv file would have all the data from a table or graph all in one clear view by it being a spreadsheet.
-
-Ongoing deployment/development 
-The going development is the constant version updates of python, so to make sure that the tweepy module imported is able to run with the new versions of python as they come out. 
-Otherwise, me, the developer, to update the README.md file every now and then to ensure to tell the user what versions of python are compatible.
-And, to be aware of Twitter's developer account policy, so that that user running the code to pull data is abiding by the rules and regulations for purpose of pulling their data, so that there is violation of any laws.
-
->>>>>>> a20a88808333ca9d7b0bd2798581288c40e3a516
 Isaac Macarthy
 Developer's documentation
 HCI 584X
